@@ -1,1 +1,1 @@
-# Cosmonavt
+# Cosmonavt _Human Edition_
