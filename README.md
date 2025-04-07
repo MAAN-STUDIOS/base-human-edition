@@ -1,7 +1,7 @@
-# **Cosmonavt** _Game Design Document_
+# **Cosmonavt: The Flood** _Game Design Document_
 
 ### **Cosmonavt © MAAN STUDIOS Todos los derechos reservados.**
-**By Angel Montemayor Davila A01785840, Mariano Carretero Fuentes A01029708**
+**By Mariano Carretero, Isabela Valls, Hans Preinfalk**
 
 ## _Index_
 
@@ -28,11 +28,6 @@
     2. [Sounds Needed](#sounds-needed)
     3. [Music Needed](#music-needed)
 7. [Schedule](#schedule)
-8. [User Stories](#user-stories)
-9. [Requirements](#requirements)
-    1. [Functional](#functional-requirements)
-    2. [Non-Functional](#non-functional-requirements)
-10. [Feature Requests](#feature-requests)
 
 ## _Game Design_
 
@@ -40,45 +35,29 @@
 
 ### **Summary**
 
-Cosmonavt es un roguelite sci-fi de acción con perspectiva top down. Explora el espacio tras un accidente temporal,
-sobrevive a los Flood y reconstruye la historia perdida mientras cooperas o compites con otros jugadores.
+Cosmonavt es un roguelite sci-fi de acción con perspectiva top down. Como el Flood, expande tu influencia por estaciones espaciales abandonadas, naves y planetas. Infecta a los supervivientes humanos, construye tu colmena y evita que descubran la cura que podría erradicar tu especie.
 
 #### Story
 
-Una nave espacial en misión se ve atrapada en las cercanías de un agujero negro. La intensa distorsión del tiempo y el
-espacio la divide en dos. El protagonista sobrevive y logra salir, pero lo que para él fueron solo minutos, para el
-resto del universo fueron décadas. Al regresar a la estación espacial, la encuentra irreconocible: vacía, oscura, en
-ruinas.
-Al explorar, descubre señales de lucha, mensajes fragmentados y cuerpos en descomposición. En un cuarto, se encuentra
-con el Flood, una entidad que inicialmente parece hostil. Apenas sobrevive al encuentro. Poco a poco, comienza a
-reconstruir los eventos ocurridos durante su ausencia. La humanidad ha sido devastada por un virus desconocido que se ha
-esparcido por estaciones y planetas.
-La clave para entender lo que pasó y, quizás, encontrar una forma de revertirlo, yace en registros de datos ocultos,
-fragmentos de inteligencia artificial y los restos de aquellos que perecieron.
+Una entidad alienígena (el Flood) evolucionó en el vacío del espacio tras ser expuesta a la radiación de un agujero negro. Esta forma de vida encontró la manera de infiltrarse en una estación espacial humana, iniciando una infestación que se propagó rápidamente.
+
+Como un nodo primario del Flood, tu conciencia despertó cuando absorbiste los conocimientos de un científico de alto rango. A diferencia de tus hermanos Flood, has desarrollado inteligencia superior y capacidad estratégica. Ahora, tu objetivo es expandir la infección, crear nuevos nodos primarios y eventualmente asimilar toda forma de vida humana en el universo conocido.
+
+Los humanos supervivientes están dispersos, algunos buscando una cura, otros simplemente tratando de escapar. Tu misión es interceptarlos, asimilarlos, y obtener sus conocimientos para impedir la creación de la cura que podría destruir a tu especie. Cada humano asimilado fortalece tu mente colmena y te acerca a la dominación total.
 
 ### **Gameplay**
 
-Explora estaciones abandonadas y planetas hostiles mientras recolectas recursos, mejoras tu traje y enfrentas enemigos
-Flood. El mundo se genera proceduralmente. Hay permadeath con progreso narrativo persistente. Otros jugadores pueden
-cooperar o traicionarte.
+Como el Flood, infectas humanos para expandir tu ejército, absorbes conocimientos de científicos, y evolucionas nuevas habilidades. Puedes dividirte para cubrir más territorio, coordinarte con tu mente colmena, y enfrentarte a humanos equipados con tecnología anti-Flood. El mundo se genera proceduralmente y debes adaptar tus estrategias a cada entorno.
 
-El objetivo del juego es encontrar todas las piezas del rompecabezas que conforman la cura: los fragmentos de historia,
-la información clave y la ubicación donde debe fabricarse. Todo esto mientras el jugador combate contra los Flood,
-recolecta recursos esenciales para sobrevivir (comida, agua, armas, trajes más resistentes) y compite con otros
-jugadores.
-El mundo del juego se genera aleatoriamente a través de una semilla, lo que garantiza que cada partida sea única,
-ofreciendo una experiencia irrepetible en cada intento.
+El objetivo del juego es impedir que los humanos encuentren todas las piezas para fabricar la cura. Debes destruir laboratorios, infectar científicos clave, y contaminar recursos vitales. Para lograrlo, expandirás tu red de infección, recolectarás biomasa para evolucionar, y utilizarás estrategias de sigilo e infiltración.
 
 ### **Mindset**
 
-Buscamos generar una inmersión total: tensión constante, decisiones significativas, desesperación progresiva. La
-experiencia debe sentirse desafiante y auténticamente espacial.
-Queremos que el jugador se sumerja en una cadena de eventos que convierta la supervivencia en un verdadero desafío,
-transmitiendo una sensación de desesperación y dificultad real a medida que avanza en el juego. El jugador deberá
-resolver problemas constantemente y enfrentarse a enemigos en su camino para completar su objetivo.
-Esta es una experiencia de supervivencia inmersiva que hará que el jugador se sienta como un auténtico explorador del
-espacio, viviendo una aventura intensa. Además, podrá jugar en partidas privadas con amigos, convirtiendo la experiencia
-en una oportunidad de colaboración y estrategia con sus cercanos.
+Buscamos generar una experiencia de poder creciente: comenzando como una entidad vulnerable pero que, con cada infección exitosa, se vuelve más poderosa y temible. El jugador debe sentir la satisfacción de expandir su influencia y controlar múltiples unidades Flood simultáneamente.
+
+Queremos que el jugador desarrolle estrategias de infección, aprenda a priorizar objetivos (científicos vs soldados), y experimente con diferentes mutaciones y evoluciones de su colmena. La sensación de horror ahora se invierte: el jugador es la amenaza que acecha en las sombras.
+
+El jugador experimentará el crecimiento orgánico de su colmena, tomando decisiones sobre qué capacidades desarrollar primero y cómo balancear expansión rápida con evolución especializada. Cada partida ofrece una experiencia única gracias a la generación procedural y las decisiones estratégicas.
 
 ## _Technical_
 
@@ -88,287 +67,234 @@ en una oportunidad de colaboración y estrategia con sus cercanos.
 
 - Menú Principal
     - Opciones
-        - Volumen general, musca, efectos
+        - Volumen general, música, efectos
         - Idioma
         - Controles
     - Crear partida
-        - Elegir nombre
-        - Dificultad
-        - Publica
-        - Privada
-            - Copiar Codigo de invitacion
-            - Enviar Codigo de invitacion
+        - Elegir tipo de Flood inicial
+        - Dificultad (resistencia humana)
+        - Pública/Privada
+            - Copiar Código de invitación
+            - Enviar Código de invitación
         - Semilla de mundo personalizada
     - Unirse a partida
-        - Partidas publicas
-            - Filtrar por dificultad, número de jugadores, tipo de entorno.
-        - Partidas privadas (codigo de invitacion)
+        - Partidas públicas
+        - Partidas privadas (código)
 - Juego
     - HUD
-        - Nivel de oxigeno, hammbre, sed, sueño
-        - Mini-mapa descubierto.
-        - Iconos de misión/historia activos.
-        - Temperatura o radiación si el entorno lo requiere.
-    - Inventario
-        - Sistema de crafteo rápido (comida, herramientas).
-        - Gestión de peso o espacio limitado.
-        - Acceso a mejoras del traje y módulos activos.
-    - Interacciones Sociales
-        - Chat de texto (en partidas multijugador).
-        - Emojis o gestos rápidos (tipo ping).
-    - Menú de pausa:
-        - Salir / guardar / reiniciar.
-        - Revisar notas y registros encontrados.
-    - Resumen de historia (cuando mueres o reinicias):
-        - Muestra los logs recolectados y lo que ya descubriste (persistente).
-    - Mejoras permanentes:
-        - Puedes gastar recursos raros para desbloquear upgrades permanentes antes de iniciar otra partida.
-    - Diario de Bitácora:
-        - Todos los documentos, audios y fragmentos de IA recolectados organizados.
-- Créditos Finales
-    - Despliegue de créditos clásicos.
-    - Mostrar estadísticas de la partida (tiempo jugado, logs encontrados, traiciones, etc.).
-    - Bonus opcional: cinemática de final según fragmentos descubiertos.
+        - Biomasa acumulada
+        - Nodos activos (cantidad de Floods controlados)
+        - Estado de evoluciones activas
+        - Mapa de infección (zonas controladas)
+        - Cooldown de habilidades especiales
+    - Red Neural (Menú de evoluciones)
+        - Árbol de evoluciones disponibles
+        - Nodos de especialización (ataque, sigilo, infección)
+        - Mejoras de la colmena
+    - Mente Colmena (Multijugador)
+        - Visión compartida con otros jugadores Flood
+        - Comandos tácticos para coordinar ataques
+        - Transferencia de biomasa entre nodos
+    - Vista de Asimilación
+        - Información obtenida de humanos asimilados
+        - Fragmentos de la cura encontrados/destruidos
+    - Menú de pausa
+        - Salir / guardar / reiniciar
+        - Revisar objetivos actuales
+- Pantalla de Evolución Final
+    - Muestra el porcentaje de dominación alcanzado
+    - Estadísticas de infección (humanos convertidos, áreas conquistadas)
+    - Desbloqueos permanentes para futuras partidas
 
 ### **Controls**
 
 - Movimiento: WASD / Arrow keys
-- Interactuar: E
-- Usar objeto: click izquierdo
-- Ciclar ítems: scroll
-- Craftear: C
-- Modo social: Tab
+- Infectar/Asimilar: E
+- Atacar: click izquierdo
+- Dividirse: Q (con cooldown)
+- Ciclar unidades Flood controladas: Tab
+- Activar evoluciones: 1-5
+- Vista de Red Neural: R
+- Comunicación con colmena (multijugador): C
 
 ### **Mechanics**
 
-#### Exploración y Supervivencia
+#### Infección y Replicación
 
-**Exploración de mapas generados por semilla**  
-El mundo se genera mediante una semilla controlada por el servidor. El cliente renderiza entornos como estaciones
-abandonadas, naves y planetas utilizando `tilemaps` sobre canvas. Cada ubicación se compone de salas interconectadas con
-eventos aleatorios, peligros y recompensas.
+**Sistema de infección**  
+El Flood puede infectar humanos mediante ataques cuerpo a cuerpo o a distancia (según evoluciones). Cada humano infectado se convierte en una nueva unidad Flood bajo tu control. La infección no es instantánea; requiere un tiempo de transformación que puede ser interrumpido.
 
-**Riesgo y recompensa**  
-El jugador puede encontrar mejoras o trampas según tablas de loot generadas con un generador de números aleatorios
-local (como `Math.random`). Al morir, pierde su inventario, pero conserva mejoras persistentes y los
-fragmentos de
-historia obtenidos.
-Las
-decisiones de exploración afectan directamente la dificultad y calidad del loot.
+**Replicación por asimilación**  
+Al matar o infectar completamente a un humano, obtienes una nueva unidad Flood. Dependiendo del tipo de humano (científico, soldado, ingeniero), la unidad Flood resultante hereda características especiales, como mayor velocidad de movimiento, resistencia o capacidad de hackeo.
 
-**Gestión de recursos**  
-El jugador debe gestionar oxígeno, energía, comida y munición. Cada acción como moverse, correr o combatir consume
-recursos. Si se agotan, el personaje sufre penalizaciones progresivas como reducción de visión, lentitud o muerte.
+**División celular (Duplicación)**  
+Con suficiente biomasa acumulada, un nodo Flood puede dividirse en dos entidades independientes con cooldown (60-90 segundos). Esta habilidad permite expandirse rápidamente pero divide los recursos y debilita temporalmente ambas unidades.
 
-**Mejoras del traje**  
-El traje espacial puede modificarse con módulos persistentes que afectan características como movilidad, defensa o
-resistencia ambiental. Las mejoras se guardan en la base de datos y persisten entre sesiones.
+**Construcción de nidos y colonias**  
+En zonas seguras, puedes establecer nidos que generan biomasa pasivamente y actúan como puntos de reaparición si mueres. Las colonias más avanzadas pueden producir unidades Flood básicas automáticamente.
 
-#### Combate y Sigilo
+#### Evolución y Especialización
 
-**Sistema de combate**  
-El jugador se enfrenta a criaturas mutadas (Flood) y otros jugadores. El combate se implementa con detección de
-colisiones simples y animaciones mínimas. Cada clase posee habilidades únicas con tiempos de reutilización que se
-gestionan en el cliente.
+**Sistema de evolución**  
+La biomasa recolectada de humanos y entornos permite desbloquear nuevas mutaciones y habilidades. Estas se organizan en tres ramas principales:
+- **Depredador**: Mejoras ofensivas (garras, tentáculos, ataque a distancia)
+- **Infiltrador**: Mejoras de sigilo (mimetismo, control mental temporal)
+- **Colmena**: Mejoras de expansión (infección más rápida, duplicación mejorada)
 
-**Sigilo y entorno**  
-El entorno afecta el sigilo. Las zonas oscuras reducen el rango de visión de los enemigos. El jugador puede desactivar
-sistemas como cámaras o puertas mediante acciones de hackeo simples. La IA de los enemigos se basa en una máquina de
-estados: patrullar, alertado, atacar.
+**Mutaciones temporales**  
+Algunos entornos permiten adaptaciones específicas (resistencia a radiación, camuflaje térmico). Estas mutaciones son temporales pero pueden volverse permanentes gastando biomasa extra.
 
-#### Vista del Jugador
+**Absorción de conocimientos**  
+Al infectar científicos o personal de alto rango, obtienes fragmentos de información sobre la cura. Esto te permite sabotear sus esfuerzos más efectivamente y anticipar sus movimientos.
 
-**Campo de visión limitado a 145 grados**  
-La visibilidad se simula en el cliente mediante un sistema de raycasting con ángulo. Solo se renderizan elementos y
-enemigos dentro del cono visual del jugador, fomentando la exploración cuidadosa y limitando la información disponible
-en pantalla.
+#### Control de Mente Colmena
 
-#### Leaderboard
+**Gestión multi-unidad**  
+Controlas directamente una unidad Flood principal, pero puedes dar órdenes básicas a otras unidades secundarias (patrullar, atacar, defender). A mayor evolución, mayor cantidad de unidades controlables simultáneamente.
 
-Mantener un Ranking compuesto por indicadores especificos y medibles (Puede haber una presentacion final para que
-el jugador vea en que lugar quedo de cada uno), fomentando la competencia y diversion.
-**Indicadores**:
+**Visión compartida**  
+Todas tus unidades Flood comparten información visual. Puedes ver lo que cualquiera de tus nodos ve, permitiendo vigilancia multidireccional y coordinación táctica.
 
-- Puntos por fragmentos de historia descubiertos
-- Tiempo de supervivencia
-- Enemigos derrotados
+**Sistema de sacrificio**  
+Puedes sacrificar unidades Flood menores para obtener biomasa de emergencia o transferirla a unidades más importantes/evolucionadas.
+
+#### Vista del Flood
+
+**Sentidos mejorados**  
+El Flood tiene visión de 180 grados (superior a los humanos) y puede detectar calor corporal a través de paredes delgadas. Las evoluciones avanzadas permiten detectar señales electromagnéticas de equipos humanos.
 
 #### Notas técnicas
 
-- **Frontend:** El juego corre exclusivamente sobre canvas utilizando TypeScript vanilla. No se utilizan frameworks ni
-  motores externos.
-- **Backend:** Express.js y PostgreSQL. El servidor maneja la generación de semillas, el guardado de progreso, mejoras
-  persistentes y sincronización mínima para multijugador.
-- **Multijugador:** Comunicación básica a través de WebSockets implementados con la biblioteca `ws`, sin capas
-  adicionales de abstracción.
+- **Frontend:** El juego corre exclusivamente sobre canvas utilizando TypeScript vanilla.
+- **Backend:** Express.js y PostgreSQL. El servidor maneja la generación de semillas, el guardado de progreso, evoluciones persistentes y sincronización para multijugador.
+- **Multijugador:** Comunicación a través de WebSockets, permitiendo coordinación entre jugadores Flood para estrategias de infección coordinadas.
 
 ## _Level Design_
 
 ### **Themes**
 
-#### 1. Estación Espacial Abandonada
+#### 1. Estación Espacial Contaminada
 
 **Ambiente:**  
-Pasillos metálicos vacíos, luces parpadeantes, puertas selladas y paneles quemados.
+Pasillos metálicos parcialmente recubiertos de biomasa orgánica, luces fallando, áreas selladas por crecimiento Flood.
 
 **Narrativa:**  
-Un lugar que fue evacuado apresuradamente. Cuerpos sin vida flotan en gravedad cero. Mensajes de auxilio grabados en
-bucle.
+Tu primera zona de expansión. Los humanos intentan mantener áreas limpias mediante sistemas de cuarentena que debes desactivar.
 
 **Jugabilidad:**
+- Perfecto para aprender mecánicas básicas de infección y sigilo.
+- Múltiples rutas de ventilación para moverse entre zonas restringidas.
+- Laboratorios con información valiosa sobre la cura.
+- Defensas automatizadas que detectan presencia Flood.
 
-- Perfecto para introducir al jugador en el misterio.
-- Baja visibilidad y muchos espacios cerrados.
-- Ideal para tutoriales de sigilo, hackeo y recursos limitados.
-- Posibilidad de encontrar registros clave del pasado de la tripulación.
-
-#### 2. Nave Infectada
+#### 2. Nave de Evacuación
 
 **Ambiente:**  
-Cubierta de tejido orgánico, mutaciones biomecánicas, paredes pulsantes con sonidos húmedos. Biomas de carne recubren el
-metal original.
+Espacios confinados, sistemas de descontaminación activos, humanos armados y aterrorizados.
 
 **Narrativa:**  
-La nave fue tomada por los Flood. Toda su estructura ha sido transformada. Es una prisión viviente.
+Humanos intentando escapar con información crítica. Tu objetivo es impedir su huida y asimilar su conocimiento.
 
 **Jugabilidad:**
+- Entorno dinámico con sistemas de purga que dañan al Flood.
+- Alta concentración de humanos para infectar rápidamente.
+- Necesidad de infiltración sigilosa inicial antes de dominar completamente.
+- Objetivo final: tomar el control de la nave para expandir la infección a nuevos destinos.
 
-- Zona de alto peligro con enemigos constantes.
-- Biomas alteran el terreno: suelos pegajosos, gravedad distorsionada.
-- Posibilidad de introducir mini-jefes o Floods evolucionados.
-- Las salas pueden mutar entre visitas (reestructuración dinámica).
-
-#### 3. Planeta Árido
+#### 3. Colonia Minera
 
 **Ambiente:**  
-Superficie rocosa con cráteres, radiación constante y vientos abrasadores. El cielo es rojo o anaranjado (en
-mini-cinematicas). No hay
-vegetación visible.
+Túneles oscuros, maquinaria pesada, radiación que afecta tanto a humanos como al Flood.
 
 **Narrativa:**  
-Una antigua colonia minera olvidada, ahora inhabitada. Se encuentra tecnología abandonada y señales de resistencia
-fallida.
+Un bastión humano fortificado con recursos que necesitan para la cura. La radiación natural presenta tanto desafíos como oportunidades evolutivas.
 
 **Jugabilidad:**
+- Evoluciones específicas para resistir radiación y aprovecharla.
+- Grandes espacios abiertos alternados con túneles estrechos.
+- Oportunidad para establecer nidos principales en zonas profundas.
+- Defensas humanas pesadas que requieren estrategia para superar.
 
-- Exploración en exteriores peligrosos con recursos escasos.
-- Sistema de radiación activo: el jugador necesita protección temporal.
-- Caves subterráneas con secretos o fragmentos históricos escondidos.
-- Uso del sigilo en ambientes abiertos, con poca cobertura.
-
-#### 4. Mundo Selvático Alienígena
+#### 4. Laboratorio Central
 
 **Ambiente:**  
-Vegetación extraña y colorida, humedad constante, criaturas bioluminiscentes y sonidos extraños. Vida vegetal que se
-mueve.
+Instalación high-tech, sistemas de contención biológica, iluminación brillante que dificulta el sigilo.
 
 **Narrativa:**  
-Un planeta desconocido que resistió la infección. La vida aquí se defiende con agresividad. Tal vez oculta una cura o
-respuestas.
+El centro de investigación donde los humanos desarrollan la cura. Tu objetivo final es destruirlo o contaminarlo.
 
 **Jugabilidad:**
-
-- Alto contraste visual y complejidad de navegación.
-- Trampas naturales y enemigos que se camuflan.
-- Vegetación puede bloquear visibilidad o ralentizar movimiento.
-- Requiere nuevas mecánicas como machetes, sensores o aliados.
+- Zona de máxima seguridad con sensores y defensas avanzadas.
+- Objetivos estratégicos específicos (contaminar muestras, destruir equipos).
+- Necesidad de coordinar múltiples unidades Flood simultáneamente.
+- Jefe final: científico con equipo anti-Flood experimental.
 
 ### **Game Flow**
 
-1. **Cinemática inicial (opcional)**  
-   Breve introducción visual o textual que explica el accidente cerca del agujero negro, como se separo ddel resto
-   de la nave, etc.
+1. **Despertar como Flood primario**  
+   Emerges de los restos de un científico infectado, con conciencia y capacidad estratégica recién adquiridas.
 
-2. **Despertar en la estación abandonada**  
-   El jugador recobra la conciencia en una zona segura parcialmente destruida, sin información clara de lo que ocurrió.
+2. **Tutorial de infección básica**  
+   Aprendes a moverte, atacar e infectar humanos desprevenidos. Los primeros objetivos son sencillos.
 
-3. **Exploración inicial y tutorial**  
-   Aprende a moverse, abrir puertas, gestionar recursos y usar herramientas básicas (oxígeno, linterna, energía).
+3. **Establecimiento del primer nido**  
+   Encuentras un área segura para crear tu primer nido, generando biomasa pasiva y punto de reaparición.
 
-4. **Primer encuentro con el Flood**  
-   Encuentro controlado que no requiere combatir, solo escapar. Marca el tono de amenaza constante.
+4. **Expansión inicial**  
+   Comienzas a infectar sistemáticamente la estación espacial, ganando más unidades Flood bajo tu control.
 
-5. **Recogida de primeros recursos**  
-   El jugador encuentra comida, agua, herramientas y quizás un módulo de mejora para el traje.
+5. **Primer contacto con resistencia organizada**  
+   Enfrentas humanos con armas y equipos especializados contra el Flood. Necesitas adaptarte y evolucionar.
 
-6. **Acceso a la consola de navegación**  
-   Puede preparar el primer viaje a otro destino: estación abandonada, nave infectada o planeta.
+6. **Desbloqueo de división celular**  
+   Obtienes suficiente biomasa para dividirte, controlando múltiples unidades simultáneamente y expandiéndote más rápido.
 
-7. **Exploración espacial libre**  
-   El jugador puede elegir hacia dónde ir. Cada nuevo lugar tiene riesgo, loot y piezas de la historia. El orden no es
-   lineal.
+7. **Especialización evolutiva**  
+   Decides qué ramas de evolución priorizar según tu estilo de juego (ataque, sigilo, expansión).
 
-8. **Encuentro con jugadores reales o IAs**  
-   En mapas compartidos puede encontrarse con otros jugadores. Puede cooperar o enfrentarse por recursos.
+8. **Descubrimiento de información sobre la cura**  
+   Al infectar científicos clave, descubres detalles sobre la cura que están desarrollando, lo que te permite sabotear sus esfuerzos.
 
-9. **Descubrimiento de registros históricos**  
-   Encuentra logs, audios, fragmentos cifrados o eventos grabados. Cada uno revela parte de la narrativa global.
+9. **Expansión a nuevas zonas**  
+   Accedes a naves de evacuación, colonias mineras y otros entornos, adaptando tus estrategias según el ambiente.
 
-10. **Evolución y especialización**  
-    Con cada misión completada o run, el jugador mejora su traje, obtiene habilidades nuevas y desbloquea nuevos
-    destinos posibles.
+10. **Confrontación con cazadores especializados**  
+    Humanos entrenados específicamente para eliminar al Flood presentan un desafío mayor, requiriendo tácticas avanzadas.
 
-11. **Sistemas persistentes**  
-    Aunque muera, mantiene los registros históricos ya desbloqueados, los módulos permanentes del traje y su reputación
-    con otros jugadores.
+11. **Construcción de una colonia avanzada**  
+    Estableces una base principal con capacidad de producir unidades Flood automáticamente, aumentando tu presencia exponencialmente.
 
-12. Progreso y estadísticas de equipo
-    Cada acción relevante (descubrir logs, sobrevivir, derrotar enemigos) suma puntos al equipo y al jugador.
-    Estos datos alimentan un sistema de puntuación para el ranking.
+12. **Evoluciones avanzadas**  
+    Desbloqueas formas Flood especiales con habilidades únicas (control mental, explosión biológica, esporas aéreas).
 
-13. **Desarrollo de relaciones entre jugadores**  
-    Puede formar alianzas temporales o traicionar. Se permite juego en equipo, traición e intercambio de objetos.
+13. **Infiltración en comunicaciones humanas**  
+    Accedes a sus sistemas de comunicación, obteniendo información privilegiada sobre movimientos y planes futuros.
 
-14. **Eventos globales aleatorios**  
-    Ej: tormentas solares, mutaciones de Flood, estaciones bloqueadas o señales falsas que generan tensión narrativa.
+14. **Corrupción de recursos críticos**  
+    Contaminas suministros, saboteas equipos y destruyes componentes necesarios para la cura.
 
-15. **Meta objetivo: reconstruir la historia y fabricar la cura**  
-    El jugador debe recolectar piezas clave (datos, ubicaciones, muestras) para desbloquear la posibilidad de crear una
-    cura.
+15. **Asalto coordinado final**  
+    Utilizas todas tus unidades Flood y evoluciones para atacar el laboratorio central donde se desarrolla la cura.
 
-16. **Final dinámico**  
-    Puede haber múltiples finales según:
-    - Fragmentos de historia descubiertos
-    - Supervivencia o traición entre jugadores
-    - Acciones tomadas durante la exploración
+16. **Asimilación final**  
+    Infectas al científico jefe, absorbiendo todo su conocimiento y asegurando la supervivencia del Flood.
 
-17. **Final de sesión**
-    - Mejor equipo / jugador de la sesion
-    - Jugador con más descubrimientos
-    - Jugador más letal (mas enemigos / jugadores asesinados)
-
-18. **Partida ganada o reinicio**  
-    Si el jugador muere: reinicia desde el punto cero, pero conserva el conocimiento acumulado.  
-    Si un jugador (o equipo) completa la historia, gana esa sesión y se activa el cierre narrativo.
+17. **Expansión galáctica**  
+    Epilogo que muestra cómo tu infección se propaga a otros planetas y sistemas, estableciendo la dominación del Flood.
 
 ## _Development_
 
-El sistema de clases en *Cosmonavt* está diseñado bajo una arquitectura orientada a componentes con una jerarquía clara
-y extensible. En la base se encuentra `EntidadBase`, una clase abstracta que representa cualquier objeto interactivo o
-visible en el juego, como jugadores, enemigos u objetos del entorno. Esta clase define atributos comunes como posición,
-tamaño y estado, así como métodos estándar para actualizar y renderizar en pantalla. A partir de esta base, se derivan
-entidades más específicas como `JugadorBase` y `EnemigoBase`, que añaden propiedades propias de cada rol, como
-inventario, comportamiento de IA o habilidades.
+El sistema de clases en *Cosmonavt: The Flood* mantiene la arquitectura orientada a componentes del diseño original, pero con inversión de roles. La clase abstracta `EntidadBase` sigue representando cualquier objeto interactivo, con `FloodBase` y `HumanoBase` como principales derivados que definen los comportamientos fundamentales de cada facción.
 
-Los jugadores están representados por subclases como `JugadorAstronauta`, que extiende la lógica de `JugadorBase` e
-incorpora un sistema de necesidades básicas (hambre, sed, descanso), módulos de traje personalizables y acciones como
-hackear o usar herramientas. Por otro lado, los enemigos como `EnemigoFlood` amplían la clase `EnemigoBase` con
-mutaciones que modifican su comportamiento y capacidades, permitiendo una progresión dinámica y amenazas impredecibles.
+`FloodBase` introduce sistemas de infección, evolución y control de colmena, mientras que `HumanoBase` ahora contiene lógica de resistencia, equipamiento anti-Flood y roles específicos (científico, soldado, ingeniero). Las especialidades Flood como `FloodInfiltrador`, `FloodDepredador` y `FloodColmena` extienden la base con habilidades y evoluciones únicas para cada rama de desarrollo.
 
-El mapa, definido por `MapaBase`, actúa como el contenedor del entorno y las entidades activas, y puede generarse a
-partir de una semilla para mantener consistencia en mundos procedurales. Las zonas del mapa se clasifican por tipo, como
-áreas contaminadas o seguras, lo cual afecta tanto al gameplay como al comportamiento de enemigos y jugadores.
+El mapa sigue usando la clase `MapaBase`, pero ahora incluye zonas de biomasa, puntos de contaminación y sistemas de purificación que afectan directamente al gameplay del Flood. Los nidos y colonias se implementan como extensiones de `EstructuraBase`, permitiendo la generación pasiva de recursos y unidades.
 
-Finalmente, los objetos del juego extienden `ObjetoBase`, permitiendo representar desde registros narrativos hasta
-herramientas o armas, cada uno con lógica de uso personalizada. Este diseño modular, junto con el uso de
-enumeraciones (`enum`) para clasificar comportamientos, acciones y tipos de entidad, permite una implementación clara,
-reutilizable y fácil de mantener en TypeScript, manteniendo el código limpio y con una base sólida para escalar el juego
-en el futuro.
+Las mecánicas de división celular, asimilación y evolución se gestionan a través de componentes modulares que pueden combinarse para crear diferentes tipos de Flood, manteniendo el código limpio y extensible.
 
 ### **Abstract Classes / Components**
 
 ```mermaid
-
 classDiagram
     class BaseEntity {
         +string id
@@ -382,87 +308,101 @@ classDiagram
         +render(ctx)
     }
 
-    class BasePlayer {
-        +BaseItem[] inventory
-        +number health
-        +number oxygen
-        +number energy
-        +PlayerClass playerClass
-        +PlayerAction[] availableActions
-        +handleInput(input)
+    class FloodBase {
+        +number biomass
+        +FloodEvolution[] evolutions
+        +FloodNode[] controlledNodes
+        +number replicationCooldown
+        +infectHuman(human)
+        +divide()
+        +commandSecondaryNodes()
     }
 
-    class BaseEnemy {
-        +number visionRange
-        +AIState aiState
-        +think(player)
+    class HumanBase {
+        +number health
+        +number infectionLevel
+        +HumanRole role
+        +ResistanceEquipment[] equipment
+        +resist()
+        +useEquipment()
     }
 
     class BaseMap {
         +number[][] tiles
         +BaseEntity[] entities
-        +ZoneType[][] zones
+        +BiomassZone[][] infectedzones
         +string seed
         +generate()
         +loadFromSeed(seed)
     }
 
-    class BaseItem {
-        +string name
-        +ItemType type
-        +number weight
-        +number value
-        +use(player)
+    class FloodNest {
+        +number biomassProduction
+        +number spawnRate
+        +FloodType spawnType
+        +upgrade()
+        +produceFlood()
     }
 
-    class AstronautPlayer {
-        +NeedType[] needs
-        +number hackLevel
-        +SuitModule[] equippedModules
+    class PredatorFlood {
+        +AttackAbility[] attacks
+        +number damageBonus
+        +executeComboAttack()
     }
 
-    class FloodEnemy {
-        +FloodMutation[] mutations
+    class InfiltratorFlood {
+        +StealthAbility[] stealthAbilities
+        +number detectionReduction
+        +mimic()
+        +temporaryMindControl()
     }
 
-    class LogItem {
-        +string content
+    class HiveFlood {
+        +number maxControlledNodes
+        +number biomassBonus
+        +expandHiveMind()
+        +accelerateEvolution()
     }
 
-    class ToolItem {
-        +ToolType toolType
+    class Scientist {
+        +CureKnowledge[] knowledge
+        +number researchSpeed
+        +developCureComponent()
     }
 
-    class WeaponItem {
+    class Soldier {
         +WeaponType weaponType
-        +number damage
+        +number antiFloodTraining
+        +useSpecialAmmo()
     }
 
-    class Suit {
-        +Helmet: SuitModule
-        +Torso: SuitModule
-        +Legs: SuitModule
-        +Backpack: SuitModule
-        +Visor: SuitModule
+    class Engineer {
+        +number repairSpeed
+        +PurificationSystem[] systems
+        +deployPurifier()
     }
 
-    class SuitModule {
+    class Evolution {
+        +string name
+        +number biomassCost
+        +EvolutionEffect effect
+        +applyEvolution(flood)
     }
 
-    BasePlayer --|> BaseEntity
-    BaseEnemy --|> BaseEntity
-    AstronautPlayer --|> BasePlayer
-    FloodEnemy --|> BaseEnemy
-    LogItem --|> BaseItem
-    ToolItem --|> BaseItem
-    WeaponItem --|> BaseItem
-    Suit --> SuitModule
+    FloodBase --|> BaseEntity
+    HumanBase --|> BaseEntity
+    FloodNest --|> BaseEntity
+    PredatorFlood --|> FloodBase
+    InfiltratorFlood --|> FloodBase
+    HiveFlood --|> FloodBase
+    Scientist --|> HumanBase
+    Soldier --|> HumanBase
+    Engineer --|> HumanBase
 ```
 
-**Enum classes (Visualisation)**
+**Enum classes (Visualization)**
 
 ```mermaid
-
 classDiagram
     class EntityState {
         <<enum>>
@@ -471,91 +411,89 @@ classDiagram
         Dead
     }
 
-    class PlayerClass {
+    class FloodEvolution {
         <<enum>>
-        Astronaut
-        Flood
+        EnhancedSenses
+        SporeProduction
+        RapidDivision
+        ArmoredCarapace
+        TentacleExtension
     }
 
-    class PlayerAction {
+    class HumanRole {
         <<enum>>
-        Move
-        Attack
-        UseItem
-        Hack
-        Hide
+        Scientist
+        Soldier
+        Engineer
+        Civilian
+        Captain
     }
 
-    class AIState {
+    class BiomassZone {
         <<enum>>
-        Patrol
-        Chase
-        Attack
-        Investigate
-    }
-
-    class ZoneType {
-        <<enum>>
-        Safe
+        Clean
         Contaminated
-        Dark
-        FloodZone
+        InfectionNest
+        PurifiedZone
     }
 
-    class ItemType {
+    class EvolutionBranch {
         <<enum>>
-        Log
-        Tool
-        Weapon
+        Predator
+        Infiltrator
+        Hive
     }
 
-    class NeedType {
+    class ResistanceEquipment {
         <<enum>>
-        Hunger
-        Thirst
-        Sleep
+        Flamethrower
+        PurifierGrenade
+        BioScanner
+        IsolationSuit
     }
 
-    class SuitModule {
+    class AttackAbility {
         <<enum>>
-        Armor
-        Propulsion
+        Slash
+        Impale
+        AcidSpit
+        ExplosiveSac
+        InfectionSpray
+    }
+
+    class StealthAbility {
+        <<enum>>
         Camouflage
-        OxygenFilter
-        ThermalVision
+        WallCling
+        VentilationTravel
+        HumanMimicry
+        ElectronicDisruption
     }
 
-    class FloodMutation {
+    class CureKnowledge {
         <<enum>>
-        Regeneration
-        Camouflage
-        ThermalVision
-        ExplosiveCharge
-    }
-
-    class ToolType {
-        <<enum>>
-        Repair
-        Hack
-        Detect
+        Formula
+        Ingredient
+        ProtocolDocument
+        TestResults
+        EquipmentSpec
     }
 
     class WeaponType {
         <<enum>>
-        Melee
-        Ranged
-        Explosive
+        Flamethrower
+        PulseRifle
+        CryoGun
+        SonicEmitter
     }
 
-    class SuitSlot {
+    class FloodType {
         <<enum>>
-        Helmet
-        Torso
-        Legs
-        Backpack
-        Visor
+        Basic
+        Evolved
+        Specialized
+        Prime
     }
-
 ```
 
 ## _Graphics_
@@ -564,152 +502,133 @@ classDiagram
 
 #### Estilo Visual General
 
-*Cosmonavt* utiliza **pixel art de resolución media**, con proporciones humanas estilizadas y animaciones limitadas pero
-expresivas. El enfoque es **semi-realista dentro de los límites del pixel art**, evitando caricaturas exageradas. Se
-busca transmitir decadencia, aislamiento y tensión espacial a través de composiciones limpias, paletas sobrias y
-detalles atmosféricos.
+*Cosmonavt: The Flood* mantiene el **pixel art de resolución media**, pero ahora enfatiza la naturaleza orgánica y cambiante del Flood. Las unidades Flood son asimétricas, con animaciones fluidas que transmiten su naturaleza alienígena. El enfoque visual sigue siendo **semi-realista dentro de los límites del pixel art**, pero con mayor énfasis en transformaciones biomecánicas y efectos de corrupción ambiental.
 
 #### Paleta de Colores
 
-- **Tonos dominantes:** negros, grises metálicos, azul oscuro, marrón oxidado.
-- **Acentos:** colores saturados usados con moderación (rojo de alerta, verde alienígena, cian brillante).
-- **Uso del contraste:** los elementos interactivos y peligros deben destacarse claramente del fondo.
-
-Approximation para paleta de colores: máximo ~32–48 colores por bioma para mantener claridad visual en canvas sin
-más complejidades o filtros automáticos.
+- **Tonos dominantes para el Flood:** verdes tóxicos, rojos orgánicos, púrpuras viscosos.
+- **Biomasa:** texturas pulsantes con variaciones sutiles de color que indican vitalidad.
+- **Contraste con humanos:** los humanos usan colores más metálicos y limpios, destacando como elementos extraños en un mundo cada vez más orgánico.
 
 #### Interfaces
 
-- **Minimalismo visual:** HUD pequeño, esquinas superiores para indicadores.
-- **Estilo “traje espacial”:** interfaces cuadradas, monocolor con animaciones tipo scanlines o glitch.
-- **Integración diegética:** pantallas flotantes pixeladas proyectadas por el traje o consolas.
+- **HUD biomórfico:** indicadores que parecen venas o tejido vivo, pulsando con tu biomasa.
+- **Red Neural:** interfaz de evoluciones representada como sinapsis neuronales y ramificaciones orgánicas.
+- **Visión del Flood:** filtro especial que resalta el calor humano y tecnología a través de las paredes.
 
 #### Feedback Visual
 
-- **Daño recibido:** parpadeo de la pantalla, sprites rojos, partículas de sangre digitalizadas.
-- **Interacción:** sprites con contorno brillante al acercarse, animaciones de parpadeo o rotación.
-- **Estados alterados:** paleta desaturada si tienes poco oxígeno, overlay rojo si estás herido, distorsión simulada con
-  desplazamiento de sprites.
-
-#### Ambientación y entornos
-
-- Las **estaciones** deben parecer viejas, sucias, con detalles en las paredes (tuberías, pantallas rotas, graffiti,
-  sangre flotante).
-- Las **naves infectadas** usan patrones pixelados orgánicos, mezclando texturas de carne con metal corroído.
-- Los **planetas** se diferencian por siluetas y color: tonos cálidos y áridos vs junglas alienígenas saturadas.
+- **Infección exitosa:** partículas orgánicas, transformación gradual del sprite humano.
+- **División celular:** animación de separación celular con efectos de estiramiento y división.
+- **Evolución:** metamorfosis visible en el sprite del Flood, con nuevos apéndices o características emergiendo.
 
 ### **Graphics Needed (Pixel Art)**
 
 #### Personajes
 
-- **Astronauta:** 4-8 direcciones, idle, caminar, interactuar, daño, animación de hackeo.
-- **Flood:** múltiples variantes (cuerpo simple, bípedo mutado, tentáculos, jefe), animaciones erráticas.
-- **NPCs:** científicos, astronautas muertos (cadáveres estáticos), IA proyectada.
+- **Flood:** múltiples variantes según evolución, con sprites para movimiento, ataque, infección, división.
+- **Humanos:** científicos, soldados, ingenieros, civiles, cada uno con animaciones de resistencia y eventual transformación.
+- **Evoluciones visibles:** apéndices adicionales, cambios de color, efectos de partículas que se añaden al sprite base.
 
 #### Entornos
 
-- **Tilesets:** 16x16 o 32x32 tiles para estaciones, naves, planetas.
-- **Decoración modular:** puertas, consolas, vidrios rotos, sistemas de soporte vital.
-- **Zonas alienígenas:** tiles orgánicos (paredes vivas, carne, nodos que pulsan).
+- **Biomasa:** tiles que muestran diferentes niveles de contaminación Flood.
+- **Nidos y colonias:** estructuras orgánicas de diferentes tamaños y complejidad.
+- **Sistemas de purificación:** dispositivos humanos que emiten luz azul dañina para el Flood.
 
 #### HUD
 
-- Indicadores: barras verticales simples o iconos pequeños (oxígeno, energía, salud).
-- Mapa: pixel minimap o representación abstracta tipo radar.
-- Chat y comunicación: caja de texto flotante, con texto pixelado monoespaciado.
+- Indicadores orgánicos: biomasa (como vena pulsante), nodos controlados (sinapsis), cooldowns (membranas).
+- Mapa de infección: representación abstracta de zonas contaminadas vs. limpias.
+- Interfaz de Red Neural: árbol de evoluciones con animaciones orgánicas.
 
 #### Objetos
 
-- Íconos de:
-    - Trajes (modular: casco, torso, piernas, mochila)
-    - Armas (pistolas, rifles, explosivos)
-    - Herramientas (kit de hackeo, botiquín, sonda)
-    - Consumibles (comida empaquetada, botellas, baterías)
-    - Registros (discos, tablets pixeladas, notas flotantes)
+- Evoluciones: representaciones visuales de cada mutación disponible.
+- Recursos especiales: contenedores de biomasa pura, muestras de la cura para destruir.
+- Equipamiento humano anti-Flood: lanzallamas, granadas purificadoras, escáneres.
 
 ## _Sounds / Music_
 
-### **Audio**
+### **Style Attributes**
 
 #### Música
 
-- Música **ambiental lo-fi o synth minimalista**, con **texturas retro-futuristas**.
-- Acorde al pixel art, se puede usar un enfoque **chiptune oscuro y ambiental** en momentos clave, combinado con pads
-  atmosféricos más modernos.
+- Música **orgánica y perturbadora**, con elementos húmedos y pulsantes.
+- Combinación de **texturas biomecánicas** con **disonancias crecientes** que reflejan la expansión del Flood.
+- Transiciones musicales que se intensifican con tu nivel de evolución y dominio.
 
 #### Sonido
 
-- Los efectos deben tener un **estilo retro estilizado**, inspirados en consolas 16-bit pero con diseño moderno.
-- Sonido digitalizado con compresión de calidad media para mantener estética retro.
-
----
+- Efectos orgánicos: viscosos, chirriantes, pulsantes.
+- Contraste entre sonidos biológicos del Flood y tecnológicos de los humanos.
+- Procesamiento de audio que simula la percepción alienígena del mundo.
 
 ### **Sounds Needed**
 
-#### Acciones
+#### Acciones del Flood
 
-- Pasos diferenciados por superficie (metal, arena, carne)
-- Disparos: corto alcance, largo alcance, energía, plasma
-- Abrir puertas, hackear (sonido de carga o interferencia)
-- Alertas del traje: pitido agudo, voz distorsionada (tipo radio)
-- HUD: “beeps” al cambiar entre menús
+- Movimiento: sonidos húmedos, arrastre orgánico
+- Infección: burbujeante, transformación dolorosa
+- División: desgarro húmedo, nacimiento viscoso
+- Evolución: metamorfosis orgánica, crujidos de huesos
+- Ataques especializados: ácido, tentáculos, esporas
 
-#### Enemigos
+#### Humanos y Entorno
 
-- Flood: rugidos secos, chillidos rápidos, sonidos húmedos/distorsionados
-- Entornos: crujidos, zumbidos de gravedad, radiación como interferencia sonora
-
----
+- Pánico humano: gritos, respiración agitada
+- Equipamiento anti-Flood: fuego, criocongelación, purificación
+- Sistemas de alerta: alarmas, cierres de emergencia
+- Ambientación de nidos: pulsaciones, susurros telepáticos
 
 ### **Music Needed**
 
-| Escenario        | Estilo musical sugerido                                     |
-|------------------|-------------------------------------------------------------|
-| Tema principal   | Synth ambiental, notas lentas, arpegios en menor            |
-| Nave infectada   | Pads disonantes, samples orgánicos, ritmo débil y latente   |
-| Espacio abierto  | Silencio con ecos, loops ambientales con distorsión         |
-| Combate          | Chiptune agresivo + percusión digital, loops tensos         |
-| Créditos finales | Piano digital, sintetizador melancólico, atmósfera relajada |
+| Situación              | Estilo musical sugerido                                     |
+|------------------------|-------------------------------------------------------------|
+| Sigilosa/Infiltración  | Pulsos lentos, tensión creciente, notas graves prolongadas  |
+| Expansión/Dominio      | Ritmos orgánicos acelerados, capas sónicas superpuestas     |
+| Confrontación humana   | Texturas disonantes, percusión intensa, caos controlado     |
+| Victoria/Asimilación   | Crescendo visceral, satisfacción siniestra, tema triunfal   |
+| Mutación/Evolución     | Transiciones tonales, transformación sonora, emergencia     |
 
 ## _Schedule_
 
-### Fase 1: Prototipo Jugable Básico
+### Fase 1: Prototipo Jugable Básico (Flood)
 
-1. Diseño de clases base (`EntidadBase`, `JugadorBase`, `EnemigoBase`)
-2. Generación procedural de mapas (semilla, tilemap)
-3. HUD básico + estados vitales (oxígeno, hambre, energía)
-4. Movimiento y colisiones básicas
-5. Interacciones básicas (abrir puertas, recoger recursos)
+1. Diseño de clases base (`EntidadBase`, `FloodBase`, `HumanoBase`)
+2. Mecánicas de infección y control básico
+3. Generación de mapas con zonas infectables
+4. HUD básico + estados del Flood (biomasa, nodos)
+5. IA humana básica (resistencia, huida, combate)
 
 ### Fase 2: Núcleo de Jugabilidad
 
-1. Inventario + crafting funcional
-2. IA básica de enemigos (Flood): patrullaje y ataque
-3. Combate cuerpo a cuerpo y con armas simples
-4. Sistema de muerte con persistencia narrativa
-5. Personalización de traje y módulos
+1. Sistema de evolución y especialización
+2. Mecánicas de división y control multi-unidad
+3. Establecimiento de nidos y generación pasiva
+4. Infección y transformación de diferentes tipos de humanos
+5. Sistema de absorción de conocimientos
 
 ### Fase 3: Multijugador y Progresión
 
-1. Networking (WebSockets, sincronización mínima)
-2. Chat + partidas privadas/públicas
-3. Sistema de progresión (mejoras permanentes, XP)
-4. Registros narrativos y diarios
-5. Sistema de reputación / alianzas / traición
+1. Networking (Mente colmena compartida)
+2. Coordinación entre jugadores Flood
+3. Sistema de evoluciones permanentes
+4. Objetivos dinámicos basados en movimientos humanos
+5. Sabotaje de la cura y contaminación estratégica
 
 ### Fase 4: Pulido y Contenido
 
-1. Implementación de biomas (estación, nave infectada, planeta árido, mundo alien)
-2. Cinemáticas y finales dinámicos
-3. Gráficos definitivos (pixel art, efectos)
-4. Sonido y música inmersiva
-5. Eventos globales dinámicos
+1. Implementación de biomas completos y su afectación al Flood
+2. Sistemas avanzados de resistencia humana
+3. Gráficos orgánicos y evoluciones visibles
+4. Efectos de sonido viscerales y música adaptativa
+5. Eventos dinámicos (purgas, cacerías, evacuaciones)
 
 ### Fase 5: Lanzamiento
 
-1. QA y optimización
-2. Anti-cheat y seguridad multijugador
-3. Escalabilidad y pruebas de servidor
-4. Accesibilidad (subtítulos, daltonismo)
+1. QA y balance de facciones
+2. Optimización de control multi-unidad
+3. Tutoriales específicos para mecánicas Flood
+4. Sistema de logros y desbloqueos permanentes
 5. Publicación y seguimiento post-lanzamiento
-

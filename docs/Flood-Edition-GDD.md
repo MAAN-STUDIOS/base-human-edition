@@ -1,7 +1,7 @@
 # **Cosmonavt: The Flood** _Game Design Document_
 
 ### **Cosmonavt © MAAN STUDIOS Todos los derechos reservados.**
-**By Angel Montemayor Davila A01785840, Mariano Carretero Fuentes A01029708**
+**By Mariano Carretero, Isabela Valls, Hans Preinfalk**
 
 ## _Index_
 
