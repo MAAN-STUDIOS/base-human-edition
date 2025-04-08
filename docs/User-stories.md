@@ -1,4 +1,4 @@
-# Historias de Usuario para Cosmonavt: The Flood
+# Historias de Usuario para Cosmonavt: The Flood Edition
 
 **Niveles de relevancia**:
 
@@ -8,35 +8,35 @@
 
 ---
 
-### Historia de Usuario 1 - Conciencia colectiva emergente
+### Historia de Usuario 1 - Absorción de conocimiento
 
-**Título:** Absorción de conocimiento humano  
+**Título:** Obtener información de jugadores humanos  
 **Descripción:**  
-Como entidad Flood, quiero absorber conocimientos de humanos infectados, para entender su civilización y buscar formas de contrarrestar la cura.  
+Como entidad Flood, quiero absorber conocimientos de jugadores humanos eliminados, para obtener pistas sobre la ubicación de la cura y avanzar hacia mi objetivo.  
 **Criterios de Aceptación:**
-* El conocimiento se obtiene al infectar humanos específicos (científicos, capitanes).
-* La información absorbida revela nuevos objetivos y estrategias.
-* La narrativa influye en las decisiones de expansión.  
+* Al eliminar científicos u otros jugadores humanos importantes, obtengo fragmentos de información.
+* Los fragmentos se acumulan en un registro accesible.
+* La información revela ubicaciones o pistas para avanzar.  
 **Nivel de Aceptación:** [Crítico]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* El conocimiento absorbido se presenta como flashes de memoria o datos fragmentados.
+* Los fragmentos deben estar conectados narrativamente.
 
 ---
 
-### Historia de Usuario 2 - Expansión procedural
+### Historia de Usuario 2 - Exploración procedural contra jugadores
 
-**Título:** Infección única en cada partida  
+**Título:** Entornos únicos en cada partida  
 **Descripción:**  
-Como entidad Flood, quiero que el entorno a infectar se genere con una semilla aleatoria, para enfrentar diferentes desafíos de expansión en cada intento.  
+Como entidad Flood, quiero mapas generados proceduralmente, para que tanto yo como los jugadores humanos debamos adaptarnos a un entorno nuevo cada vez.  
 **Criterios de Aceptación:**
 * Cada partida genera un mapa diferente mediante semilla.
-* La semilla determina ubicación de humanos, recursos y defensas.
+* La semilla determina ubicación de recursos, fragmentos y áreas iniciales para cada equipo.
 * Los jugadores pueden compartir semillas para desafíos específicos.  
 **Nivel de Aceptación:** [Crítico]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* Ideal para crear diferentes escenarios de infección.
+* Ideal para evitar que jugadores memoricen mapas y rutas.
 
 ---
 
@@ -44,335 +44,335 @@ Como entidad Flood, quiero que el entorno a infectar se genere con una semilla a
 
 **Título:** Control del recurso vital Flood  
 **Descripción:**  
-Como entidad Flood, quiero gestionar mi biomasa para evolucionar, dividirme y expandirme, sintiendo la planificación estratégica de mi infección.  
+Como entidad Flood, quiero gestionar mi biomasa para evolucionar y mejorar mis capacidades, adaptándome a las tácticas que observo en los jugadores humanos.  
 **Criterios de Aceptación:**
-* La biomasa se obtiene al infectar humanos o absorber materia orgánica.
-* La división y evolución consumen biomasa.
+* La biomasa se obtiene al eliminar jugadores humanos o absorber materia orgánica.
+* Las evoluciones consumen biomasa según su poder.
 * El HUD muestra claramente la cantidad disponible.  
 **Nivel de Aceptación:** [Crítico]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* La biomasa es el recurso principal que impulsa todas las mecánicas.
+* La biomasa es el recurso principal para toda evolución.
 
 ---
 
-### Historia de Usuario 4 - Sistema de mutación
+### Historia de Usuario 4 - Sistema de evolución
 
-**Título:** Evolucionar para adaptarme a nuevos desafíos  
+**Título:** Desarrollar nuevas capacidades contra jugadores  
 **Descripción:**  
-Como entidad Flood, quiero desarrollar nuevas mutaciones, para superar defensas humanas y adaptarme a diferentes entornos.  
+Como entidad Flood, quiero evolucionar para adaptarme a las estrategias de los jugadores humanos, superando sus defensas y contrarrestando sus tácticas.  
 **Criterios de Aceptación:**
-* Existen ramas evolutivas claras (ataque, sigilo, infección).
-* Las mutaciones pueden desbloquearse gastando biomasa.
-* Cada evolución afecta visualmente al Flood.  
+* Existen tres ramas evolutivas claras (depredador, infiltrador, adaptativo).
+* Las evoluciones se desbloquean mediante biomasa.
+* Cada evolución ofrece ventajas específicas contra diferentes roles humanos.  
 **Nivel de Aceptación:** [Importante]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* Las evoluciones deben ofrecer ventajas estratégicas claras.
+* Las evoluciones deben estar balanceadas contra las capacidades humanas.
 
 ---
 
-### Historia de Usuario 5 - Especialización de formas Flood
+### Historia de Usuario 5 - Duplicación controlada
 
-**Título:** Personalización de mutaciones por rol  
+**Título:** Crear y controlar duplicados  
 **Descripción:**  
-Como entidad Flood, quiero especializar mis diferentes nodos en roles específicos, para crear una colmena diversa y adaptable.  
+Como entidad Flood, quiero duplicarme al eliminar jugadores humanos, para explorar más territorio y atacar desde múltiples posiciones, creando ventaja numérica.  
 **Criterios de Aceptación:**
-* Posibilidad de crear unidades Flood especializadas (infiltradores, depredadores, colmena).
-* Cada especialización tiene habilidades y apariencia única.
-* Se pueden desarrollar mejoras específicas para cada tipo.  
-**Nivel de Aceptación:** [Importante]  
-**Horas estimadas:** ⏳ A determinar  
-**Notas adicionales:**
-* Compatible con el sistema de división celular.
-
----
-
-### Historia de Usuario 6 - Enfrentamiento con resistencia humana
-
-**Título:** Superar defensas y cazadores humanos  
-**Descripción:**  
-Como entidad Flood, quiero enfrentarme a humanos con equipamiento anti-Flood, para sentir el desafío de superar una resistencia organizada.  
-**Criterios de Aceptación:**
-* Los humanos tienen tácticas y armas específicas contra el Flood.
-* Diferentes tipos de humanos (soldados, científicos) representan diferentes amenazas.
-* Al derrotarlos se obtienen conocimientos o acceso a nuevas zonas.  
+* Al eliminar un jugador humano, puedo crear un duplicado con cooldown.
+* Puedo alternar el control entre mis duplicados con Tab.
+* La interfaz muestra claramente qué duplicado estoy controlando.  
 **Nivel de Aceptación:** [Crítico]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* La dificultad debe escalar con el nivel de infección.
+* El duplicado hereda las evoluciones básicas del Flood original.
 
 ---
 
-### Historia de Usuario 7 - Sentidos mejorados del Flood
+### Historia de Usuario 6 - Enfrentamiento con jugadores humanos
 
-**Título:** Percepción alienígena del entorno  
+**Título:** Superar defensas y tácticas humanas  
 **Descripción:**  
-Como entidad Flood, quiero tener sentidos expandidos (180° de visión, detección térmica), para percibir el entorno de forma superior a los humanos.  
+Como entidad Flood, quiero enfrentarme a jugadores humanos con diferentes roles y equipamiento, sintiendo el desafío de una resistencia organizada e inteligente.  
 **Criterios de Aceptación:**
-* Campo visual ampliado respecto a humanos.
-* Capacidad para detectar calor a través de paredes finas.
-* Evoluciones pueden mejorar aún más estos sentidos.  
-**Nivel de Aceptación:** [Importante]  
-**Horas estimadas:** ⏳ A determinar  
-**Notas adicionales:**
-* Implementación sugerida con raycasting mejorado.
-
----
-
-### Historia de Usuario 8 - Comunicación telepática entre Floods
-
-**Título:** Mente colmena compartida  
-**Descripción:**  
-Como entidad Flood, quiero comunicarme telepáticamente con otros jugadores Flood, para coordinar ataques y estrategias de expansión.  
-**Criterios de Aceptación:**
-* Sistema de chat o comunicación exclusivo entre Floods.
-* Posibilidad de compartir visión o información.
-* Interfaz integrada en la experiencia Flood.  
-**Nivel de Aceptación:** [Importante]  
-**Horas estimadas:** ⏳ A determinar  
-**Notas adicionales:**
-* Se puede implementar como un chat estilizado como "conexión neural".
-
----
-
-### Historia de Usuario 9 - Persistencia tras destrucción
-
-**Título:** Indestructibilidad de la colmena  
-**Descripción:**  
-Como entidad Flood, quiero que mi colmena sobreviva aunque uno de mis nodos sea destruido, para mantener la sensación de ser un organismo expansivo.  
-**Criterios de Aceptación:**
-* Al perder un nodo, se mantiene control de otros nodos activos.
-* Los nidos establecidos permiten la regeneración.
-* El conocimiento absorbido persiste.  
+* Los jugadores humanos tienen tácticas y armas específicas contra el Flood.
+* Cada rol humano (científico, soldado, ingeniero) representa un desafío único.
+* La dificultad de los jugadores humanos aumenta conforme descubro más fragmentos.  
 **Nivel de Aceptación:** [Crítico]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* Solo hay derrota total si se eliminan todos los nidos y nodos.
+* Debe haber contramedidas para cada estrategia humana común.
 
 ---
 
-### Historia de Usuario 10 - Colmenas privadas
+### Historia de Usuario 7 - Sentidos mejorados para rastrear jugadores
 
-**Título:** Infección coordinada con jugadores específicos  
+**Título:** Percepción alienígena para detectar humanos  
 **Descripción:**  
-Como entidad Flood, quiero crear partidas privadas con otros jugadores Flood seleccionados, para coordinar estrategias sin interferencias.  
+Como entidad Flood, quiero tener sentidos expandidos, para detectar jugadores humanos ocultos y sus movimientos a través de obstáculos.  
 **Criterios de Aceptación:**
-* Se puede crear colmena con código/invitación.
-* Solo miembros invitados pueden unirse.
-* El sistema debe ser sencillo e intuitivo.  
+* Campo visual ampliado (180°) respecto a jugadores humanos.
+* Evoluciones que permiten detectar humanos a través de paredes.
+* Indicadores visuales de actividad humana reciente (huellas, calor residual).  
+**Nivel de Aceptación:** [Importante]  
+**Horas estimadas:** ⏳ A determinar  
+**Notas adicionales:**
+* Los sentidos mejorados deben tener representación visual distintiva.
+
+---
+
+### Historia de Usuario 8 - Comunicación entre Floods
+
+**Título:** Coordinación con equipo Flood  
+**Descripción:**  
+Como entidad Flood, quiero comunicarme con otros jugadores Flood, para coordinar ataques contra jugadores humanos y compartir descubrimientos.  
+**Criterios de Aceptación:**
+* Sistema de chat o comunicación entre jugadores Flood.
+* Capacidad para marcar posiciones de jugadores humanos en el mapa.
+* Comandos rápidos para solicitar ayuda o señalar objetivos.  
+**Nivel de Aceptación:** [Importante]  
+**Horas estimadas:** ⏳ A determinar  
+**Notas adicionales:**
+* Debe facilitar la coordinación táctica contra jugadores humanos.
+
+---
+
+### Historia de Usuario 9 - Persistencia de conocimiento
+
+**Título:** Conservar información tras la derrota  
+**Descripción:**  
+Como entidad Flood, quiero que el conocimiento absorbido persista aunque muera, para mantener el progreso narrativo entre intentos.  
+**Criterios de Aceptación:**
+* Los fragmentos de conocimiento se conservan entre partidas.
+* Se puede acceder a un registro de información descubierta.
+* El progreso narrativo no se reinicia.  
 **Nivel de Aceptación:** [Crítico]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* También debe permitir partidas públicas abiertas.
+* Fundamental para la experiencia roguelite.
 
 ---
 
-### Historia de Usuario 11 - Contaminación de sistemas
+### Historia de Usuario 10 - Partidas privadas con amigos
 
-**Título:** Bioinfiltración de tecnología humana  
+**Título:** Jugar con equipos organizados  
 **Descripción:**  
-Como entidad Flood, quiero contaminar sistemas informáticos y de seguridad, para desactivar defensas y acceder a nuevas áreas.  
+Como entidad Flood, quiero crear partidas privadas con equipos de Flood y humanos predefinidos, para enfrentar desafíos organizados.  
 **Criterios de Aceptación:**
-* Capacidad para adherirse e infectar consolas y sistemas.
-* La contaminación provoca fallos o control del sistema.
-* Requiere tiempo y genera alerta.  
-**Nivel de Aceptación:** [Importante]  
-**Horas estimadas:** ⏳ A determinar  
-**Notas adicionales:**
-* Ideal para desactivar zonas de cuarentena o sistemas de purificación.
-
----
-
-### Historia de Usuario 12 - Adaptación a diferentes entornos
-
-**Título:** Mutación específica por bioma  
-**Descripción:**  
-Como entidad Flood, quiero desarrollar adaptaciones específicas para cada entorno, para expandir mi influencia en diferentes ecosistemas.  
-**Criterios de Aceptación:**
-* Cada bioma requiere o favorece adaptaciones específicas.
-* Las evoluciones pueden especializarse para ventajas en ciertos entornos.
-* El aspecto visual cambia según la especialización ambiental.  
-**Nivel de Aceptación:** [Importante]  
-**Horas estimadas:** ⏳ A determinar  
-**Notas adicionales:**
-* Mínimo 2 biomas con adaptaciones diferentes.
-
----
-
-### Historia de Usuario 13 - IA de resistencia humana
-
-**Título:** Comportamiento defensivo de los humanos  
-**Descripción:**  
-Como entidad Flood, quiero que los humanos respondan a la amenaza de forma inteligente, para proporcionar un desafío satisfactorio durante la expansión.  
-**Criterios de Aceptación:**
-* Los humanos establecen zonas de cuarentena.
-* Utilizan diferentes tácticas según mi nivel de infección.
-* Científicos buscan activamente desarrollar la cura.  
+* Se puede crear partida con código/invitación.
+* Capacidad para asignar jugadores a equipos Flood o humanos.
+* Balance configurable de jugadores por equipo.  
 **Nivel de Aceptación:** [Crítico]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* Usar máquina de estados para comportamiento humano.
+* También debe existir matchmaking para partidas públicas.
 
 ---
 
-### Historia de Usuario 14 - Evolución entre sesiones
+### Historia de Usuario 11 - Infiltración de sistemas
 
-**Título:** Conservar mutaciones fundamentales  
+**Título:** Hackear la tecnología de jugadores humanos  
 **Descripción:**  
-Como entidad Flood, quiero mantener ciertas evoluciones básicas entre partidas, para sentir la progresión de mi especie.  
+Como entidad Flood, quiero infiltrarme en sistemas de seguridad establecidos por jugadores humanos, para acceder a áreas restringidas donde hay información valiosa.  
 **Criterios de Aceptación:**
-* Las evoluciones fundamentales persisten.
-* El conocimiento absorbido de humanos se conserva.
-* Existe una mecánica de "memoria genética".  
+* Capacidad para interactuar con consolas y sistemas de seguridad colocados por jugadores humanos.
+* La infiltración requiere tiempo o evoluciones específicas.
+* Desbloquea puertas, desactiva defensas o revela datos.  
 **Nivel de Aceptación:** [Importante]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* Refuerza el concepto de organismo en constante evolución.
+* Debe existir contrajuego para los humanos (reactivar sistemas, trampas).
 
 ---
 
-### Historia de Usuario 15 - Gestión de biomasa limitada
+### Historia de Usuario 12 - Adaptación a entornos hostiles
 
-**Título:** Priorización estratégica de recursos  
+**Título:** Resistir trampas y defensas de jugadores humanos  
 **Descripción:**  
-Como entidad Flood, quiero gestionar una cantidad limitada de biomasa, para tomar decisiones estratégicas sobre cómo y dónde expandirme.  
+Como entidad Flood, quiero evolucionar adaptaciones específicas para contrarrestar las defensas establecidas por jugadores humanos.  
 **Criterios de Aceptación:**
-* Existe un límite máximo de biomasa almacenable.
-* Se debe elegir entre expandirse o evolucionar.
-* Algunas evoluciones requieren más biomasa pero ofrecen mejores ventajas.  
+* Los jugadores humanos pueden crear diferentes tipos de trampas o defensas.
+* Las evoluciones adaptativas permiten resistir o evitar estas defensas.
+* El aspecto visual cambia según las adaptaciones.  
 **Nivel de Aceptación:** [Importante]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* Balance esencial para profundidad estratégica.
+* Especialmente importante para la rama evolutiva adaptativa.
 
 ---
 
-### Historia de Usuario 16 - Evoluciones pre-partida
+### Historia de Usuario 13 - Tácticas de jugadores humanos
 
-**Título:** Adaptación inicial de forma Flood  
+**Título:** Enfrentar estrategias humanas impredecibles  
 **Descripción:**  
-Como entidad Flood, quiero seleccionar algunas evoluciones básicas antes de iniciar la partida, para adaptar mi estrategia inicial.  
+Como entidad Flood, quiero que los jugadores humanos tengan herramientas tácticas diversas, para enfrentar desafíos impredecibles y dinámicos.  
 **Criterios de Aceptación:**
-* Menú de evoluciones iniciales.
-* Las selecciones afectan las capacidades iniciales.
-* Se desbloquean más opciones con el progreso.  
+* Los jugadores humanos pueden coordinar defensas y emboscadas.
+* Científicos jugadores tienen mecánicas para investigar la cura.
+* Cada rol humano tiene habilidades específicas y complementarias.  
+**Nivel de Aceptación:** [Crítico]  
+**Horas estimadas:** ⏳ A determinar  
+**Notas adicionales:**
+* Las habilidades humanas deben estar balanceadas contra las del Flood.
+
+---
+
+### Historia de Usuario 14 - Evoluciones persistentes
+
+**Título:** Conservar mutaciones básicas  
+**Descripción:**  
+Como entidad Flood, quiero mantener ciertas evoluciones entre partidas, para sentir progresión a largo plazo incluso contra equipos humanos experimentados.  
+**Criterios de Aceptación:**
+* Algunas evoluciones fundamentales persisten tras la derrota.
+* Las evoluciones avanzadas requieren desbloqueo en cada partida.
+* Sistema para elegir qué evoluciones conservar basado en estilo de juego.  
 **Nivel de Aceptación:** [Importante]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* Permite definir estrategia desde el inicio.
+* Balance esencial para no crear ventaja injusta contra nuevos jugadores humanos.
 
 ---
 
-### Historia de Usuario 17 - Comandos telepáticos
+### Historia de Usuario 15 - Gestión estratégica de biomasa
 
-**Título:** Control rápido de nodos secundarios  
+**Título:** Priorizar evoluciones según tácticas humanas  
 **Descripción:**  
-Como entidad Flood, quiero emitir comandos básicos a mis nodos secundarios, para coordinar ataques o movimientos sin controlcarlos directamente.  
+Como entidad Flood, quiero decidir cómo gastar mi biomasa limitada, para adaptar mi estrategia según las tácticas observadas en los jugadores humanos.  
 **Criterios de Aceptación:**
-* Lista de comandos básicos (atacar, explorar, defender).
-* Interfaz rápida de selección y asignación.
-* Los nodos secundarios responden según su tipo y evolución.  
+* Las evoluciones tienen diferentes costos de biomasa.
+* Debo elegir entre duplicarme o evolucionar.
+* Diferentes composiciones de equipo humano favorecen diferentes evoluciones.  
+**Nivel de Aceptación:** [Importante]  
+**Horas estimadas:** ⏳ A determinar  
+**Notas adicionales:**
+* Fundamental para la profundidad estratégica contra jugadores humanos.
+
+---
+
+### Historia de Usuario 16 - Evoluciones iniciales
+
+**Título:** Comenzar con ventajas básicas  
+**Descripción:**  
+Como entidad Flood, quiero seleccionar algunas evoluciones básicas antes de iniciar la partida, para adaptar mi estilo de juego según el equipo humano que enfrento.  
+**Criterios de Aceptación:**
+* Menú de selección de evoluciones iniciales.
+* Limitado a evoluciones fundamentales para no desbalancear.
+* Más opciones se desbloquean con el progreso.  
+**Nivel de Aceptación:** [Importante]  
+**Horas estimadas:** ⏳ A determinar  
+**Notas adicionales:**
+* Permite estrategias variadas desde el inicio.
+
+---
+
+### Historia de Usuario 17 - Control táctico de duplicados
+
+**Título:** Gestión eficiente de múltiples unidades  
+**Descripción:**  
+Como entidad Flood, quiero una interfaz intuitiva para controlar mis duplicados, para coordinar ataques y movimientos tácticos contra jugadores humanos.  
+**Criterios de Aceptación:**
+* Sistema para alternar rápidamente entre duplicados.
+* Indicador claro de qué duplicado controlo actualmente.
+* Minimap que muestre posición de todos mis duplicados.  
+**Nivel de Aceptación:** [Importante]  
+**Horas estimadas:** ⏳ A determinar  
+**Notas adicionales:**
+* Esencial para crear ventaja táctica mediante múltiples unidades.
+
+---
+
+### Historia de Usuario 18 - Sabotear investigación humana
+
+**Título:** Interferir con el progreso de la cura  
+**Descripción:**  
+Como entidad Flood, quiero poder sabotear el progreso de investigación de los jugadores humanos, para retrasar el desarrollo de la cura.  
+**Criterios de Aceptación:**
+* Capacidad para destruir componentes de la cura.
+* Mecánicas para contaminar zonas de investigación.
+* Sistema para interrumpir el trabajo de científicos jugadores.  
+**Nivel de Aceptación:** [Crítico]  
+**Horas estimadas:** ⏳ A determinar  
+**Notas adicionales:**
+* Ruta alternativa para la victoria además de encontrar la cura primero.
+
+---
+
+### Historia de Usuario 19 - Mapa de actividad humana
+
+**Título:** Visualizar movimientos de jugadores humanos  
+**Descripción:**  
+Como entidad Flood, quiero ver indicadores de actividad humana reciente en el mapa, para rastrear movimientos y planificar emboscadas.  
+**Criterios de Aceptación:**
+* El mapa muestra áreas con actividad humana reciente.
+* Se indican posibles ubicaciones de científicos u objetivos valiosos.
+* La información se actualiza con descubrimientos de todo el equipo Flood.  
+**Nivel de Aceptación:** [Importante]  
+**Horas estimadas:** ⏳ A determinar  
+**Notas adicionales:**
+* Contrabalanceado por la capacidad de los humanos para detectar zonas infectadas.
+
+---
+
+### Historia de Usuario 20 - Transformación visual evolutiva
+
+**Título:** Apariencia que refleja mi estilo de juego  
+**Descripción:**  
+Como entidad Flood, quiero que mi apariencia cambie significativamente según mis evoluciones elegidas, para intimidar a los jugadores humanos y reflejar mi estilo de juego.  
+**Criterios de Aceptación:**
+* Cambios visuales significativos con cada evolución mayor.
+* Apariencia distintiva para cada rama evolutiva.
+* Los jugadores humanos pueden identificar visualmente mis capacidades.  
+**Nivel de Aceptación:** [Importante]  
+**Horas estimadas:** ⏳ A determinar  
+**Notas adicionales:**
+* Añade elemento de reconocimiento e intimidación psicológica.
+
+---
+
+### Historia de Usuario 21 - Respuesta a purgas coordinadas
+
+**Título:** Sobrevivir a ataques masivos humanos  
+**Descripción:**  
+Como entidad Flood, quiero contar con opciones para responder a ataques coordinados de jugadores humanos, para sobrevivir a intentos de purga masiva.  
+**Criterios de Aceptación:**
+* Habilidades de escape de emergencia.
+* Evoluciones defensivas activables en momentos críticos.
+* Mecánicas para reagruparse después de un ataque humano coordinado.  
 **Nivel de Aceptación:** [Opcional]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* Facilita el manejo de múltiples unidades Flood.
+* Evita la frustración por eliminaciones súbitas sin oportunidad de respuesta.
 
 ---
 
-### Historia de Usuario 18 - Absorber información crítica
+### Historia de Usuario 22 - Infectar jugadores clave
 
-**Título:** Extraer conocimiento sobre la cura  
+**Título:** Priorizar objetivos humanos estratégicos  
 **Descripción:**  
-Como entidad Flood, quiero absorber información de científicos clave, para sabotear el desarrollo de la cura.  
+Como entidad Flood, quiero poder identificar qué jugadores humanos tienen roles críticos, para priorizar su eliminación y obtener ventaja estratégica.  
 **Criterios de Aceptación:**
-* Científicos contienen información vital.
-* La absorción revela ubicaciones o componentes de la cura.
-* Algunos conocimientos requieren múltiples científicos o niveles de acceso.  
-**Nivel de Aceptación:** [Crítico]  
-**Horas estimadas:** ⏳ A determinar  
-**Notas adicionales:**
-* Parte central del objetivo desde la perspectiva Flood.
-
----
-
-### Historia de Usuario 19 - Mapa de infección
-
-**Título:** Visualización del dominio Flood  
-**Descripción:**  
-Como entidad Flood, quiero ver un mapa que muestre las zonas ya infectadas, para planificar mi expansión estratégicamente.  
-**Criterios de Aceptación:**
-* El mapa muestra áreas contaminadas vs. limpias.
-* Se indican nidos, colonias y concentraciones humanas.
-* Se actualiza en tiempo real con el avance de la infección.  
+* Indicadores visuales de roles humanos (científico, soldado, ingeniero).
+* Recompensas especiales por eliminar científicos trabajando en la cura.
+* Información sobre la especialización de cada jugador humano al absorberlo.  
 **Nivel de Aceptación:** [Importante]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* Visualización esencial para planificación estratégica.
+* Fomenta la caza selectiva en lugar de eliminar cualquier humano disponible.
 
 ---
 
-### Historia de Usuario 20 - Transformación ambiental
+### Historia de Usuario 23 - Formas Flood especializadas
 
-**Título:** Modificar el entorno con biomasa  
+**Título:** Aspecto visual según rama evolutiva  
 **Descripción:**  
-Como entidad Flood, quiero transformar gradualmente el ambiente alrededor de mis nidos, para crear zonas más favorables para mi expansión.  
+Como entidad Flood, quiero que mi apariencia refleje mi especialización, para sentir el impacto visual de mis decisiones estratégicas.  
 **Criterios de Aceptación:**
-* Las áreas cercanas a nidos Flood se cubren progresivamente de biomasa.
-* La transformación ofrece ventajas a unidades Flood.
-* Los humanos son más vulnerables en zonas transformadas.  
-**Nivel de Aceptación:** [Importante]  
-**Horas estimadas:** ⏳ A determinar  
-**Notas adicionales:**
-* El cambio visual debe ser gradual y orgánico.
-
----
-
-### Historia de Usuario 21 - Purgas y eventos de resistencia
-
-**Título:** Respuestas humanas organizadas  
-**Descripción:**  
-Como entidad Flood, quiero enfrentar eventos de purga o contraataque humano, para sentir la tensión de una resistencia organizada.  
-**Criterios de Aceptación:**
-* Los humanos lanzan operaciones de limpieza en zonas muy infectadas.
-* Utilizan tecnología especial anti-Flood durante estos eventos.
-* Sobrevivir a estas purgas proporciona evoluciones especiales.  
+* Cada rama evolutiva tiene estética distintiva (Depredador: agresiva, Infiltrador: sigilosa, Adaptativo: versátil).
+* Las evoluciones avanzadas tienen efectos visuales impactantes.
+* Otros jugadores pueden identificar mi especialización a simple vista.  
 **Nivel de Aceptación:** [Opcional]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* Añade variabilidad y picos de dificultad.
-
----
-
-### Historia de Usuario 22 - Infectar humanos especiales
-
-**Título:** Conversión de individuos clave  
-**Descripción:**  
-Como entidad Flood, quiero infectar humanos con roles únicos, para obtener beneficios especiales o información privilegiada.  
-**Criterios de Aceptación:**
-* Diferentes tipos de humanos proporcionan ventajas únicas al ser infectados.
-* Algunos requieren técnicas de infección especiales.
-* La infección de figuras clave desbloquea nuevas áreas u objetivos.  
-**Nivel de Aceptación:** [Importante]  
-**Horas estimadas:** ⏳ A determinar  
-**Notas adicionales:**
-* El sistema de absorción de conocimiento debe ser gratificante y revelador.
-
----
-
-### Historia de Usuario 23 - Formas Flood únicas
-
-**Título:** Aspecto visual según especialización  
-**Descripción:**  
-Como entidad Flood, quiero que mi apariencia refleje mis evoluciones, para sentir el impacto visual de mis decisiones estratégicas.  
-**Criterios de Aceptación:**
-* Las evoluciones modifican visiblemente al Flood.
-* Diferentes ramas evolutivas tienen estéticas distintivas.
-* Las mutaciones avanzadas tienen efectos visuales impactantes.  
-**Nivel de Aceptación:** [Opcional]  
-**Horas estimadas:** ⏳ A determinar  
-**Notas adicionales:**
-* Importante para la satisfacción del jugador al evolucionar.
+* Añade satisfacción visual a la progresión.
 
 ---
 
@@ -380,27 +380,27 @@ Como entidad Flood, quiero que mi apariencia refleje mis evoluciones, para senti
 
 **Título:** Destruir avances científicos humanos  
 **Descripción:**  
-Como entidad Flood, quiero contaminar o destruir componentes de la cura, para impedir que los humanos desarrollen un arma contra mi especie.  
+Como entidad Flood, quiero contaminar o destruir componentes físicos de la cura, para retrasar el progreso de los jugadores humanos incluso si no puedo eliminarlos.  
 **Criterios de Aceptación:**
-* Los componentes están protegidos en laboratorios o zonas seguras.
-* La contaminación requiere tiempo o evoluciones especiales.
-* Cada componente saboteado reduce la posibilidad de crear la cura.  
+* Los componentes físicos de la cura pueden ser dañados o contaminados.
+* Existen mecánicas de sabotaje que requieren tiempo pero causan retrasos significativos.
+* Los jugadores humanos pueden defender o reparar componentes saboteados.  
 **Nivel de Aceptación:** [Importante]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* Objetivo principal alternativo a la asimilación total.
+* Proporciona objetivos adicionales además de la caza directa.
 
 ---
 
-### Historia de Usuario 25 - Camuflaje y mimetismo
+### Historia de Usuario 25 - Camuflaje contra jugadores
 
 **Título:** Infiltración entre humanos  
 **Descripción:**  
-Como entidad Flood, quiero desarrollar la capacidad de camuflarme como humano, para infiltrarme en zonas de alta seguridad.  
+Como entidad Flood, quiero desarrollar la capacidad de camuflarme en entornos vigilados por jugadores, para acercarme sin ser detectado y realizar ataques sorpresa.  
 **Criterios de Aceptación:**
 * Evolución especializada para rama infiltradora.
 * El camuflaje tiene duración limitada y consume biomasa.
-* Permite acceder a áreas restringidas sin alertas.  
+* Los jugadores humanos tienen contramedidas limitadas (escáneres, trampas de detección).  
 **Nivel de Aceptación:** [Opcional]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
@@ -408,47 +408,47 @@ Como entidad Flood, quiero desarrollar la capacidad de camuflarme como humano, p
 
 ---
 
-### Historia de Usuario 26 - Ataques especializados
+### Historia de Usuario 26 - Ataques especializados contra equipamiento
 
-**Título:** Mutaciones ofensivas avanzadas  
+**Título:** Neutralizar defensas tecnológicas humanas  
 **Descripción:**  
-Como entidad Flood, quiero desarrollar ataques especiales según mi evolución, para enfrentar diferentes tipos de resistencia humana.  
+Como entidad Flood, quiero desarrollar ataques que inutilicen el equipamiento de los jugadores humanos, para reducir su capacidad de respuesta.  
 **Criterios de Aceptación:**
-* Diferentes tipos de ataques (ácido, tentáculos, esporas).
+* Diferentes tipos de ataques (ácido, pulsos electromagnéticos) contra equipamiento.
 * Consumen biomasa o tienen cooldown.
-* Algunos son efectivos contra defensas específicas.  
+* Algunos son efectivos contra defensas específicas (trajes, armas, escudos).  
 **Nivel de Aceptación:** [Importante]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* La rama depredadora debe tener la mayor variedad ofensiva.
+* Contramedida estratégica contra jugadores bien equipados.
 
 ---
 
 ### Historia de Usuario 27 - Infección sigilosa
 
-**Título:** Expandirse sin ser detectado  
+**Título:** Eliminar jugadores sin alertar a sus compañeros  
 **Descripción:**  
-Como entidad Flood, quiero infectar zonas sin alertar a los sistemas de seguridad, para establecer una presencia antes del ataque principal.  
+Como entidad Flood, quiero poder eliminar jugadores humanos silenciosamente, para reducir sus números sin desencadenar una respuesta inmediata.  
 **Criterios de Aceptación:**
-* Indicadores de alerta que muestran nivel de detección.
-* Capacidad para moverse por conductos o zonas oscuras.
-* Infectar silenciosamente a humanos aislados.  
+* Mecánica de eliminación silenciosa que requiere acercamiento sigiloso.
+* Indicadores visuales sutiles de jugadores adecuados para emboscada.
+* Los jugadores eliminados silenciosamente no activan alarmas automáticas.  
 **Nivel de Aceptación:** [Importante]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* Esencial para la rama infiltradora.
+* Crucial para estrategias de infiltración progresiva.
 
 ---
 
 ### Historia de Usuario 28 - Registro de conocimiento absorbido
 
-**Título:** Memoria colectiva Flood  
+**Título:** Organizar información para objetivos estratégicos  
 **Descripción:**  
-Como entidad Flood, quiero acceder a un registro de toda la información absorbida de humanos, para comprender mejor a mi enemigo.  
+Como entidad Flood, quiero acceder a un registro de toda la información absorbida de jugadores humanos, para planificar mis próximos movimientos estratégicamente.  
 **Criterios de Aceptación:**
 * Visualización organizada de conocimientos obtenidos.
-* Categorización por tipo (científico, militar, personal).
-* Persiste entre partidas.  
+* Indicadores de proximidad a la ubicación de la cura.
+* Registro compartido con todo el equipo Flood.  
 **Nivel de Aceptación:** [Importante]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
@@ -458,350 +458,350 @@ Como entidad Flood, quiero acceder a un registro de toda la información absorbi
 
 ### Historia de Usuario 29 - Escudo biomecánico
 
-**Título:** Protección temporal contra purificación  
+**Título:** Protección temporal contra ataques coordinados  
 **Descripción:**  
-Como entidad Flood, quiero desarrollar una protección temporal contra armas anti-Flood, para sobrevivir a ataques concentrados.  
+Como entidad Flood, quiero desarrollar una protección temporal contra ataques concentrados de jugadores humanos, para escapar o sobrevivir situaciones críticas.  
 **Criterios de Aceptación:**
 * Se activa como habilidad especial.
-* Tiene duración limitada y cooldown.
-* Protege contra fuego, congelación o purificadores.  
+* Tiene duración limitada y cooldown significativo.
+* Protege contra ataques de varios jugadores simultáneamente.  
 **Nivel de Aceptación:** [Opcional]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* Balancear para no hacer al Flood invulnerable.
+* Mecanismo anti-frustración contra emboscadas humanas.
 
 ---
 
-### Historia de Usuario 30 - Reanimar nodos destruidos
+### Historia de Usuario 30 - Reabsorber duplicados
 
-**Título:** Recuperación de unidades Flood caídas  
+**Título:** Recuperar biomasa de duplicados en peligro  
 **Descripción:**  
-Como entidad Flood, quiero poder regenerar nodos destruidos recientemente, para no perder biomasa invertida en evoluciones.  
+Como entidad Flood, quiero poder reabsorber mis duplicados en peligro, para no perder biomasa y mantener mis capacidades.  
 **Criterios de Aceptación:**
-* Requiere biomasa adicional y proximidad.
-* Debe realizarse en un tiempo limitado tras destrucción.
-* El nodo recuperado mantiene evoluciones previas.  
+* Mecanismo para reabsorber duplicados cercanos.
+* Recupera parte de la biomasa invertida en la duplicación.
+* Requiere proximidad y tiempo vulnerable.  
 **Nivel de Aceptación:** [Importante]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* Especialmente útil para nodos altamente evolucionados.
+* Proporciona opciones estratégicas de retirada.
 
 ---
 
-### Historia de Usuario 31 - Humanos resistentes especiales
+### Historia de Usuario 31 - Enfrentamiento con jugadores especializados
 
-**Título:** Enfrentar a cazadores anti-Flood  
+**Título:** Contrarrestar roles humanos especializados  
 **Descripción:**  
-Como entidad Flood, quiero enfrentarme a humanos especialmente entrenados para combatirme, para experimentar desafíos únicos durante la expansión.  
+Como entidad Flood, quiero evoluciones específicas para contrarrestar roles humanos especializados, para tener ventaja táctica en encuentros directos.  
 **Criterios de Aceptación:**
-* Cada bioma tiene al menos un tipo de cazador especializado.
-* Utilizan tácticas y equipamiento avanzado.
-* Al infectarlos se obtienen evoluciones raras.  
+* Evoluciones específicas contra científicos, soldados e ingenieros.
+* Las contramedidas requieren identificar correctamente el rol del oponente.
+* Costes de biomasa balanceados según la efectividad de la contramedida.  
 **Nivel de Aceptación:** [Importante]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* Equivalentes a "mini-jefes" desde perspectiva Flood.
+* Fomenta el reconocimiento y adaptación táctica.
 
 ---
 
-### Historia de Usuario 32 - Zonas de purificación
+### Historia de Usuario 32 - Detectar y sortear trampas
 
-**Título:** Áreas hostiles para el Flood  
+**Título:** Evitar emboscadas preparadas por jugadores humanos  
 **Descripción:**  
-Como entidad Flood, quiero enfrentar zonas purificadas que dañan mi biomasa, para sentir vulnerabilidad estratégica en ciertos entornos.  
+Como entidad Flood, quiero poder detectar y evitar trampas colocadas por jugadores, para no perder biomasa o duplicados innecesariamente.  
 **Criterios de Aceptación:**
-* Zonas con radiación, químicos o campos de energía anti-Flood.
-* Reducen biomasa gradualmente mientras se permanece en ellas.
-* Requieren evoluciones específicas para atravesarlas.  
+* Sistema de sentidos que permita detectar trampas con anticipación.
+* Indicadores visuales sutiles de áreas potencialmente peligrosas.
+* Evoluciones que aumentan la resistencia a tipos específicos de trampas.  
 **Nivel de Aceptación:** [Opcional]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* Añade elementos de planificación estratégica.
+* Contramedida para la estrategia defensiva humana.
 
 ---
 
-### Historia de Usuario 33 - Jerarquía de colmena
+### Historia de Usuario 33 - Coordinación de ataque en equipo
 
-**Título:** Roles especializados entre jugadores Flood  
+**Título:** Planificación táctica con otros jugadores Flood  
 **Descripción:**  
-Como entidad Flood, quiero que exista jerarquía entre jugadores de la colmena, para coordinar mejor las estrategias de expansión.  
+Como entidad Flood, quiero herramientas para coordinar ataques con otros jugadores Flood, para superar defensas humanas organizadas.  
 **Criterios de Aceptación:**
-* Sistema de roles (nodo primario, infiltrador, depredador).
-* El nodo primario puede dirigir biomasa o dar órdenes.
-* Los roles otorgan bonificaciones específicas.  
+* Sistema de marcado de objetivos y puntos de interés.
+* Indicadores de intención (atacar, distraer, flanquear).
+* Visualización compartida de posiciones humanas detectadas.  
 **Nivel de Aceptación:** [Opcional]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* Fortalece la cooperación en multijugador.
+* Esencial para estrategias complejas contra jugadores organizados.
 
 ---
 
-### Historia de Usuario 34 - Regeneración en nido
+### Historia de Usuario 34 - Regeneración tras derrotas parciales
 
-**Título:** Recuperación en zonas de alta biomasa  
+**Título:** Recuperación después de emboscadas humanas  
 **Descripción:**  
-Como entidad Flood, quiero regenerarme en nidos establecidos si un nodo es destruido, para mantener la continuidad de mi expansión.  
+Como entidad Flood, quiero un sistema para recuperarme tras perder duplicados o biomasa, para mantener la presión incluso después de reveses tácticos.  
 **Criterios de Aceptación:**
-* Los nidos actúan como puntos de reaparición.
-* Se conservan evoluciones básicas pero se pierde biomasa.
-* El tiempo de regeneración aumenta con cada muerte.  
+* Mecanismos de recuperación que no sean inmediatos pero sí constantes.
+* Zonas de alta biomasa para recuperación acelerada.
+* Balance para evitar ciclos de muerte sin consecuencias.  
 **Nivel de Aceptación:** [Importante]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* Alternativa al sistema de muerte permanente.
+* Evita la frustración de quedar permanentemente debilitado tras un error.
 
 ---
 
-### Historia de Usuario 35 - Esporas de detección
+### Historia de Usuario 35 - Detección de actividad científica
 
-**Título:** Reconocimiento de áreas inexploradas  
+**Título:** Sentir avances en la investigación de la cura  
 **Descripción:**  
-Como entidad Flood, quiero lanzar esporas que revelen temporalmente zonas no visitadas, para planificar mi expansión.  
+Como entidad Flood, quiero poder detectar cuando los científicos humanos están realizando avances significativos, para priorizar su interrupción.  
 **Criterios de Aceptación:**
-* Las esporas consumen biomasa.
-* Revelan presencia humana y sistemas de defensa.
-* Tienen alcance limitado y duración temporal.  
+* Alertas de actividad científica intensa en el mapa.
+* Indicador del progreso general de la cura.
+* Evoluciones que mejoran la capacidad de detectar actividad científica.  
 **Nivel de Aceptación:** [Opcional]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* Alternativa Flood al sistema de escaneo.
+* Proporciona urgencia y direccionalidad a la caza.
 
 ---
 
-### Historia de Usuario 36 - Semilla de infección personalizada
+### Historia de Usuario 36 - Semilla de partida compartida
 
-**Título:** Configurar el patrón de expansión inicial  
+**Título:** Configurar el entorno de confrontación  
 **Descripción:**  
-Como entidad Flood, quiero seleccionar o compartir la semilla de infección, para experimentar o replicar patrones de expansión específicos.  
+Como entidad Flood, quiero seleccionar o compartir la semilla de generación de mundo, para crear desafíos específicos o replicar escenarios interesantes.  
 **Criterios de Aceptación:**
 * Campo para introducir semilla al iniciar partida.
 * Opción para generar y copiar semilla actual.
-* La semilla determina ubicaciones iniciales de recursos y humanos.  
+* La semilla determina ubicaciones iniciales, recursos y configuración del mapa.  
 **Nivel de Aceptación:** [Importante]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* Facilita compartir escenarios de infección particulares.
+* Facilita compartir escenarios particularmente desafiantes o interesantes.
 
 ---
 
-### Historia de Usuario 37 - Niveles de resistencia humana
+### Historia de Usuario 37 - Niveles de dificultad humana
 
-**Título:** Ajustar el desafío de expansión  
+**Título:** Ajustar el desafío PvP  
 **Descripción:**  
-Como entidad Flood, quiero elegir el nivel de resistencia humana, para adaptar el desafío a mi experiencia de juego.  
+Como entidad Flood, quiero que exista balance en las partidas según el nivel de experiencia de los jugadores, para enfrentar desafíos adecuados a mi habilidad.  
 **Criterios de Aceptación:**
-* Niveles de resistencia afectan armamento, coordinación y desarrollo de la cura.
-* Mayor resistencia ofrece más recompensas evolutivas.
-* Afecta la velocidad de respuesta anti-Flood.  
+* Sistema de matchmaking basado en experiencia o desempeño.
+* Ajustes de recursos y capacidades para equilibrar diferentes niveles de habilidad.
+* Partidas privadas con configuraciones personalizables de dificultad.  
 **Nivel de Aceptación:** [Importante]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* Equivalente a niveles de dificultad.
+* Fundamental para una buena experiencia PvP a largo plazo.
 
 ---
 
-### Historia de Usuario 38 - Preferencias de mente colmena
+### Historia de Usuario 38 - Preferencias de control de duplicados
 
-**Título:** Conservar configuración sensorial  
+**Título:** Personalizar sistema de duplicación  
 **Descripción:**  
-Como entidad Flood, quiero que mis preferencias de control y visualización se mantengan entre sesiones, para no reconfigurarlas en cada infestación.  
+Como entidad Flood, quiero configurar cómo alterno entre duplicados y cómo se comportan, para adaptar el sistema a mi estilo de juego.  
 **Criterios de Aceptación:**
-* Configuración persistente en localStorage o servidor.
-* Incluye controles, filtros visuales y preferencias de HUD.
-* Opción para restaurar valores por defecto.  
+* Configuración persistente de controles para alternar duplicados.
+* Opciones para comportamiento por defecto de duplicados no controlados.
+* Personalización de HUD para visualización de duplicados.  
 **Nivel de Aceptación:** [Crítico]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* Mejora la experiencia de usuario.
+* Mejora significativamente la experiencia con múltiples unidades.
 
 ---
 
 ### Historia de Usuario 39 - Balance de evoluciones
 
-**Título:** Sistema de mutaciones equilibrado  
+**Título:** Sistema de mutaciones equilibrado contra jugadores  
 **Descripción:**  
-Como entidad Flood, quiero que las evoluciones estén balanceadas, para que cada rama evolutiva sea viable y satisfactoria.  
+Como entidad Flood, quiero que las evoluciones estén balanceadas contra las capacidades humanas, para que cada estrategia evolutiva sea viable.  
 **Criterios de Aceptación:**
-* Cada rama ofrece ventajas comparables pero distintas.
+* Cada rama ofrece ventajas comparables pero distintas contra jugadores humanos.
 * El costo en biomasa es proporcional al beneficio.
-* Las evoluciones avanzadas requieren especialización previa.  
+* Existen contramedidas humanas para cada evolución, pero no son absolutas.  
 **Nivel de Aceptación:** [Crítico]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* Fundamental para la rejugabilidad con diferentes estrategias.
+* Fundamental para la diversidad estratégica y rejugabilidad.
 
 ---
 
-### Historia de Usuario 40 - Estadísticas de dominación
+### Historia de Usuario 40 - Estadísticas post-partida
 
-**Título:** Registro de eficiencia de infección  
+**Título:** Análisis de rendimiento contra humanos  
 **Descripción:**  
-Como entidad Flood, quiero ver estadísticas de mi expansión al finalizar, para evaluar mi eficacia y comparar con intentos anteriores.  
+Como entidad Flood, quiero ver estadísticas detalladas al finalizar la partida, para evaluar mi desempeño y mejorar mis estrategias futuras.  
 **Criterios de Aceptación:**
-* Indicadores de áreas contaminadas, humanos infectados, biomasa acumulada.
-* Comparación con expansiones previas.
-* Visualización orgánica e inmersiva.  
+* Indicadores de humanos eliminados, duplicados creados, biomasa acumulada.
+* Comparación con partidas anteriores.
+* Datos sobre qué evoluciones fueron más efectivas.  
 **Nivel de Aceptación:** [Opcional]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* Fuente de motivación para mejorar técnicas de expansión.
+* Fuente de aprendizaje y mejora continua.
 
 ---
 
-### Historia de Usuario 41 - Adaptaciones específicas por bioma
+### Historia de Usuario 41 - Adaptaciones para contrarrestar equipos humanos
 
-**Título:** Flood especializado por entorno  
+**Título:** Evoluciones contra estrategias de equipos  
 **Descripción:**  
-Como entidad Flood, quiero desarrollar adaptaciones específicas para cada bioma, para optimizar mi expansión en diferentes entornos.  
+Como entidad Flood, quiero evoluciones específicas para contrarrestar composiciones de equipo humano comunes, para adaptar mi estrategia según el equipo que enfrento.  
 **Criterios de Aceptación:**
-* Evoluciones exclusivas por tipo de entorno.
-* Bonificaciones de eficiencia en biomas compatibles.
-* Aspecto visual adaptado al ambiente.  
+* Evoluciones que son especialmente efectivas contra ciertos grupos de roles.
+* Sistema para identificar la composición del equipo humano.
+* Recomendaciones estratégicas basadas en la composición enemiga.  
 **Nivel de Aceptación:** [Importante]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* Aumenta profundidad estratégica de evolución.
+* Añade profundidad estratégica al juego de equipo.
 
 ---
 
-### Historia de Usuario 42 - Guía de asimilación
+### Historia de Usuario 42 - Tutorial de caza humana
 
-**Título:** Aprender a infectar eficientemente  
+**Título:** Aprender a enfrentar jugadores reales  
 **Descripción:**  
-Como entidad Flood, quiero recibir instrucciones contextuales sobre mis habilidades, para maximizar mi eficacia durante las primeras etapas de expansión.  
+Como entidad Flood, quiero un tutorial específico sobre estrategias contra jugadores humanos, para aprender a contrarrestar comportamientos reales y no solo de IA.  
 **Criterios de Aceptación:**
-* Guía integrada sobre mecánicas básicas de infección y evolución.
-* Las instrucciones aparecen al desbloquear nuevas habilidades.
-* Se puede desactivar para jugadores experimentados.  
+* Guía sobre cómo identificar roles y comportamientos humanos.
+* Escenarios prácticos de emboscada, sigilo y ataque directo.
+* Consejos sobre cómo adaptar evoluciones según tácticas humanas observadas.  
 **Nivel de Aceptación:** [Importante]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* Enfocado en nuevos jugadores para entender mecánicas Flood.
+* Fundamental para nuevos jugadores en PvP.
 
 ---
 
-### Historia de Usuario 43 - Pulsos sensoriales ambientales
+### Historia de Usuario 43 - Respuesta sensorial a jugadores humanos
 
-**Título:** Inmersión sonora y visual alienígena  
+**Título:** Feedback audiovisual alienígena  
 **Descripción:**  
-Como entidad Flood, quiero que el ambiente sonoro y visual se adapte a mi nivel de evolución, para sentir la progresiva transformación del entorno.  
+Como entidad Flood, quiero que el ambiente sonoro y visual cambie según la presencia y actividad de jugadores humanos, para sentir inmersivamente el acecho.  
 **Criterios de Aceptación:**
-* Efectos visuales y sonoros que se intensifican con la expansión.
-* Cada rama evolutiva tiene su identidad sensorial.
-* Transiciones entre estados de alerta y calma.  
+* Efectos visuales y sonoros que indican proximidad de humanos.
+* Cambios en la música y ambiente según la tensión del momento.
+* Sonidos distintivos para diferentes roles y actividades humanas.  
 **Nivel de Aceptación:** [Opcional]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* Refuerza inmersión como entidad alienígena.
+* Refuerza inmersión como depredador alienígena.
 
 ---
 
-### Historia de Usuario 44 - Control personalizado de nodos
+### Historia de Usuario 44 - Control personalizado para multiunidad
 
-**Título:** Asignación intuitiva de controles  
+**Título:** Configuración de manejo de duplicados  
 **Descripción:**  
-Como entidad Flood, quiero configurar los controles para gestionar múltiples nodos, para adaptar la experiencia a mi estilo de juego.  
+Como entidad Flood, quiero personalizar los controles para gestionar múltiples duplicados, para adaptar la experiencia a mi estilo de juego.  
 **Criterios de Aceptación:**
-* Configuración para cambiar entre nodos controlados.
-* Asignación de comandos para nodos secundarios.
-* Opciones para gestión de habilidades de evolución.  
+* Configuración para cambiar entre duplicados (teclas, orden, preferencias).
+* Opciones de visualización para distinguir entre duplicados.
+* Atajos rápidos configurables para gestión de duplicados.  
 **Nivel de Aceptación:** [Crítico]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* Esencial para control intuitivo de múltiples unidades.
+* Esencial para manejar eficientemente múltiples unidades.
 
 ---
 
-### Historia de Usuario 45 - Anticipar defensas humanas
+### Historia de Usuario 45 - Anticipar tácticas humanas
 
-**Título:** Aprender patrones de resistencia  
+**Título:** Reconocer patrones de comportamiento humano  
 **Descripción:**  
-Como entidad Flood, quiero identificar señales previas a contraataques humanos, para adaptar mi estrategia de expansión.  
+Como entidad Flood, quiero tener herramientas para identificar patrones en el comportamiento de los jugadores humanos, para anticipar sus movimientos.  
 **Criterios de Aceptación:**
-* Indicadores visuales o sonoros de actividad defensiva.
-* Tiempo para reaccionar antes de purgas o ataques.
-* El conocimiento absorbido mejora capacidad predictiva.  
+* Indicadores de rutas frecuentes o áreas de actividad recurrente.
+* Sistema para marcar comportamientos observados.
+* Evoluciones que mejoran la capacidad predictiva.  
 **Nivel de Aceptación:** [Importante]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* Añade capa estratégica a la expansión.
+* Añade capa estratégica a la caza.
 
 ---
 
-### Historia de Usuario 46 - Alertas de amenaza a la colmena
+### Historia de Usuario 46 - Alertas sobre avances humanos
 
-**Título:** Conciencia de peligro para nidos  
+**Título:** Monitorear progreso de la cura  
 **Descripción:**  
-Como entidad Flood, quiero recibir alertas cuando mis nidos o colonias estén bajo ataque, para proteger mis puntos de expansión críticos.  
+Como entidad Flood, quiero recibir alertas cuando los humanos hagan avances significativos en el desarrollo de la cura, para responder rápidamente.  
 **Criterios de Aceptación:**
-* Alertas visuales y telepáticas cuando un nido está amenazado.
-* Indicación de dirección y tipo de amenaza.
-* Priorización basada en importancia del nido.  
+* Notificaciones claras sobre hitos de progreso humano.
+* Indicación de ubicaciones donde se está avanzando la investigación.
+* Sentido de urgencia adecuado según la proximidad a completar la cura.  
 **Nivel de Aceptación:** [Crítico]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* Crucial para preservar infraestructura Flood.
+* Crucial para mantener la tensión narrativa y gameplay.
 
 ---
 
-### Historia de Usuario 47 - Variación genética por semilla
+### Historia de Usuario 47 - Mutaciones aleatorias por partida
 
-**Título:** Mutaciones únicas por partida  
+**Título:** Evoluciones únicas en cada intento  
 **Descripción:**  
-Como entidad Flood, quiero que algunas evoluciones sean específicas de cada semilla, para descubrir combinaciones únicas en diferentes partidas.  
+Como entidad Flood, quiero que algunas evoluciones especiales sean específicas de cada partida, para descubrir combinaciones únicas en diferentes sesiones.  
 **Criterios de Aceptación:**
-* Algunas mutaciones raras solo disponibles en ciertas semillas.
-* Las combinaciones evolutivas varían entre partidas.
-* Se pueden compartir descubrimientos de mutaciones especiales.  
-**Nivel de Aceptación:** [Importante]  
-**Horas estimadas:** ⏳ A determinar  
-**Notas adicionales:**
-* Aumenta rejugabilidad y exploración de posibilidades.
-
----
-
-### Historia de Usuario 48 - Logros de expansión
-
-**Título:** Reconocimiento de dominio Flood  
-**Descripción:**  
-Como entidad Flood, quiero desbloquear logros al alcanzar hitos de expansión, para sentir progreso en mi dominio.  
-**Criterios de Aceptación:**
-* Logros por infectar cierto número de humanos, áreas o tipos especiales.
-* Algunos logros por evoluciones avanzadas o raras.
-* Desbloqueo de contenido cosmético o habilidades únicas.  
+* Algunas mutaciones raras solo disponibles en ciertas semillas o configuraciones.
+* Las mutaciones especiales ofrecen ventajas significativas pero situacionales.
+* Posibilidad de compartir descubrimientos de mutaciones especiales con otros jugadores.  
 **Nivel de Aceptación:** [Opcional]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* Motivación adicional para explorar todas las opciones.
+* Aumenta rejugabilidad y descubrimiento.
 
 ---
 
-### Historia de Usuario 49 - Interfaz orgánica integrada
+### Historia de Usuario 48 - Logros competitivos
 
-**Título:** HUD biomórfico inmersivo  
+**Título:** Reconocimiento de hazañas contra humanos  
 **Descripción:**  
-Como entidad Flood, quiero una interfaz que parezca parte de mi organismo, para mantener la inmersión como ser alienígena.  
+Como entidad Flood, quiero desbloquear logros al superar desafíos específicos contra jugadores humanos, para demostrar mi maestría predatoria.  
 **Criterios de Aceptación:**
-* HUD con elementos que parecen tejido vivo o conexiones neurales.
-* Indicadores de biomasa, nodos y evolución integrados visualmente.
-* Adaptación visual según rama evolutiva principal.  
-**Nivel de Aceptación:** [Importante]  
+* Logros por eliminaciones estratégicas, supervivencia prolongada o desempeño tácticamente brillante.
+* Algunos logros requieren coordinación con otros jugadores Flood.
+* Reconocimientos visibles para otros jugadores.  
+**Nivel de Aceptación:** [Opcional]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* Fundamental para la estética del juego desde perspectiva Flood.
+* Motivación adicional para explorar todas las posibilidades tácticas.
 
 ---
 
-### Historia de Usuario 50 - Colmena compartida por seed
+### Historia de Usuario 49 - Interfaz orgánica adaptable
 
-**Título:** Reproducir patrones de expansión exitosos  
+**Título:** HUD biomórfico que evoluciona conmigo  
 **Descripción:**  
-Como entidad Flood, quiero compartir semillas de partidas exitosas, para que otros jugadores puedan enfrentar los mismos desafíos o aprender de mis estrategias.  
+Como entidad Flood, quiero que mi interfaz visual refleje mis evoluciones y especialización, adaptándose a mi estilo de juego.  
 **Criterios de Aceptación:**
-* Sistema para generar y compartir código de semilla.
-* Opción para clasificar semillas por tipo de desafío.
-* Posibilidad de añadir descripción o consejos.  
+* HUD con elementos que cambian según rama evolutiva principal.
+* Indicadores que se adaptan a mis sentidos mejorados y capacidades.
+* Opciones para personalizar la información más relevante según mi estrategia.  
 **Nivel de Aceptación:** [Importante]  
 **Horas estimadas:** ⏳ A determinar  
 **Notas adicionales:**
-* Fomenta comunidad y comparación de estrategias.
+* Refuerza la conexión con el personaje y la sensación de evolución.
+
+---
+
+### Historia de Usuario 50 - Matchmaking equilibrado
+
+**Título:** Emparejamiento justo entre equipos  
+**Descripción:**  
+Como entidad Flood, quiero que las partidas públicas emparejen equipos de nivel similar, para tener experiencias competitivas equilibradas.  
+**Criterios de Aceptación:**
+* Sistema que considera experiencia, desempeño histórico y nivel de jugadores.
+* Balance numérico adecuado entre equipos Flood y humanos.
+* Opciones para ajustar criterios de emparejamiento según preferencias.  
+**Nivel de Aceptación:** [Importante]  
+**Horas estimadas:** ⏳ A determinar  
+**Notas adicionales:**
+* Fundamental para la longevidad del componente PvP del juego.
