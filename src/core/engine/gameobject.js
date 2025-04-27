@@ -16,8 +16,8 @@ export class GameObject {
 
     //METHODS
     draw(ctx) {
-        if (this.sprite) {
-            ctx.drawImage(this.sprite.image, this.position.x, this.position.y, this.width, this.height);
+        if (this.spriteImage) {
+            ctx.drawImage(this.spriteImage, this.position.x, this.position.y, this.width, this.height);
 
         } else {
             ctx.fillStyle = "red";
@@ -74,7 +74,7 @@ export class GameObject {
             width: this.width,
             height: this.height,
             hitbox: this.hitbox,
-            sprite: this.sprite,
+            sprite: this.spriteImage,
             destroyImage: this.destroyImage
         };
     }
