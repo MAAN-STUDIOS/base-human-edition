@@ -10,8 +10,8 @@ export class GameObject {
         this.width = options.width || 0;
         this.height = options.height || 0;
         this.hitbox = options.hitbox || hitbox(this.position, this.width, this.height);
-        this.sprite = options.sprite || null;
         this.destroyImage = options.destroyImage || null;
+        this.spriteImage = null;
     }
 
     //METHODS
@@ -44,7 +44,7 @@ export class GameObject {
         
         ctx.clearRect(this.position.x, this.position.y, this.width, this.height);
         this.hitbox.clear();
-        this.sprite = null;
+        this.spriteImage = null;
         this.position = null;
         this.width = null;
         this.height = null;
@@ -60,6 +60,14 @@ export class GameObject {
         }
         return true;
     }
+    setSprite(imagePath, rect) {
+        this.spriteImage = new Image();
+        this.spriteImage.src = imagePath;
+        if (rect) {
+            this.spriteRect = rect;
+        }
+    }
+
     serialize() {
         return {
             position: this.position,
