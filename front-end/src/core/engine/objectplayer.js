@@ -10,7 +10,7 @@ const WEAPON_DAMAGE = {
 const PISTOL_RANGE = 500; // Rango máximo de la pistola
 
 class Player extends GameObject {
-    constructor(position, width, height, color) {
+    constructor({position, width, height, color}) {
         super(position, width, height, color);
         this.health = 100;
         this.attackSlots = ["pistola", "granada"]; // Ejemplo de slots de ataque
@@ -75,6 +75,15 @@ class Player extends GameObject {
                 console.log("Collision detected with", obj);
                 // Lógica de qué hacer en caso de colisión
             }
+        }
+    }
+
+    draw(ctx) {
+        ctx.fillStyle = this.color;
+        ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
+    
+        if (window.DEBUG_MODE) {
+            this.hitbox.drawDebug(ctx);
         }
     }
 }

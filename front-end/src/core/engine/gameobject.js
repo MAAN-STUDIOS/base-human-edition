@@ -1,6 +1,7 @@
 "use strict";
 import { Vector } from "@utils/vector.js";
 import { hitbox } from "@utils/hitbox.js";
+import { Player } from "@engine/objectplayer.js";
 
 
 export class GameObject {
@@ -11,21 +12,20 @@ export class GameObject {
         this.hitbox = options.hitbox || hitbox(this);
         this.destroyImage = options.destroyImage || null;
         this.spriteImage = null;
+        this.color = options.color || "red"; // para el test
     }
 
     //METHODS
     draw(ctx) {
         if (this.spriteImage) {
             ctx.drawImage(this.spriteImage, this.position.x, this.position.y, this.width, this.height);
-
         } else {
-            ctx.fillStyle = "red";
+            ctx.fillStyle = this.color;
             ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
         }
 
-
-        this.drawBoundingBox(ctx);
         if (window.DEBUG_MODE) {
+            this.drawBoundingBox(ctx);
             this.hitbox.drawDebug(ctx);
         }
     }
