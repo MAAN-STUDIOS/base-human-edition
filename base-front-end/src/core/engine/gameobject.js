@@ -1,15 +1,14 @@
 "use strict";
-//IMPORTS TO BE CORRECTLY ADDED
-import { vector } from "../utils/vector.js";
-import { hitbox } from "../utils/hitbox.js";
+import { Vector } from "@utils/vector.js";
+import { hitbox } from "@utils/hitbox.js";
 
 
 export class GameObject {
     constructor(options = {}) {
-        this.position = options.position || vector(0, 0);
+        this.position = options.position || new Vector(0, 0);
         this.width = options.width || 0;
         this.height = options.height || 0;
-        this.hitbox = options.hitbox || hitbox(this.position, this.width, this.height);
+        this.hitbox = options.hitbox || hitbox(this);
         this.destroyImage = options.destroyImage || null;
         this.spriteImage = null;
     }
@@ -26,6 +25,9 @@ export class GameObject {
 
 
         this.drawBoundingBox(ctx);
+        if (window.DEBUG_MODE) {
+            this.hitbox.drawDebug(ctx);
+        }
     }
     collidesWith(other) {
         if (this.hitbox.collidesWith(other.hitbox)) {
@@ -40,18 +42,29 @@ export class GameObject {
         ctx.strokeRect(this.position.x, this.position.y, this.width, this.height);
     }
     
-    onDestroy(ctx){
+    onDestroy(ctx) {
+       
+        if (this.destroyImage) {
+            ctx.drawImage(this.destroyImage, this.position.x, this.position.y, this.width, this.height);
+        }
+        
         
         ctx.clearRect(this.position.x, this.position.y, this.width, this.height);
-        this.hitbox.clear();
+        
+        if (this.hitbox) {
+            this.hitbox.clear();
+        }
+        
         this.spriteImage = null;
         this.position = null;
         this.width = null;
         this.height = null;
         this.hitbox = null;
-        ctx.drawImage(this.destroyImage, this.position.x, this.position.y, this.width, this.height);
+        this.destroyImage = null;
         
-
+        // Opcional: Facilitar la recolección de basura
+        // Eliminar referencias circulares y listeners
+        // this.removeAllEventListeners(); //  EJ
     }
     isVisible(viewport){
         if (this.position.x + this.width < viewport.x || this.position.x > viewport.x + viewport.width ||
@@ -80,6 +93,6 @@ export class GameObject {
     }
     update(delta) {
         // Method to be implemented
-        this.hitbox.update(this.position, this.width, this.height);
+       
     }
 }
