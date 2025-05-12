@@ -1,6 +1,6 @@
 "use strict";
 import { Vector } from "@utils/vector.js";
-import { Hitbox } from "@utils/hitbox.js";
+import { hitbox } from "@utils/hitbox.js";
 
 
 export class GameObject {
