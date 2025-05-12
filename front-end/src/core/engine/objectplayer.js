@@ -1,4 +1,5 @@
 import { GameObject } from "./gameobject";
+import { Hitbox } from "@utils/hitbox.js";
 
 const PLAYER_SPEED = 5;
 const MAX_HEALTH = 100;
@@ -13,12 +14,7 @@ class Player extends GameObject {
         super(position, width, height, color);
         this.health = 100;
         this.attackSlots = ["pistola", "granada"]; // Ejemplo de slots de ataque
-        this.hitbox = { // Hitbox representando el área de colisión
-            x: this.position.x,
-            y: this.position.y,
-            width: this.width,
-            height: this.height
-        };
+        this.hitbox = new Hitbox(this);
     }
 
     // Mover al jugador en una dirección
@@ -38,8 +34,6 @@ class Player extends GameObject {
                 this.position.x += speed;
                 break;
         }
-        // Actualizamos el hitbox al mover
-        this.hitbox = { ...this.position, width: this.width, height: this.height };
     }
 
     // Interactuar con un objeto
@@ -85,3 +79,4 @@ class Player extends GameObject {
     }
 }
 
+export { Player };

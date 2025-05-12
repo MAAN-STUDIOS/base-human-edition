@@ -92,7 +92,7 @@ export class GameObject {
         };
     }
     update(delta) {
-        // Method to be implemented
+        // TODO:Method to be implemented
        
     }
 }
