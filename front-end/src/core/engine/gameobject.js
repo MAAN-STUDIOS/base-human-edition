@@ -1,15 +1,14 @@
 "use strict";
-//IMPORTS TO BE CORRECTLY ADDED
-import { vector } from "../utils/vector.js";
-import { hitbox } from "../utils/hitbox.js";
+import { Vector } from "@utils/vector.js";
+import { Hitbox } from "@utils/hitbox.js";
 
 
 export class GameObject {
     constructor(options = {}) {
-        this.position = options.position || vector(0, 0);
+        this.position = options.position || new Vector(0, 0);
         this.width = options.width || 0;
         this.height = options.height || 0;
-        this.hitbox = options.hitbox || hitbox(this.position, this.width, this.height);
+        this.hitbox = options.hitbox || new Hitbox(this.position, this.width, this.height);
         this.destroyImage = options.destroyImage || null;
         this.spriteImage = null;
     }
