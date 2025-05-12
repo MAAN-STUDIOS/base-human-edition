@@ -93,6 +93,6 @@ export class GameObject {
     }
     update(delta) {
         // Method to be implemented
-        this.hitbox.update(this.position, this.width, this.height);
+       
     }
 }
