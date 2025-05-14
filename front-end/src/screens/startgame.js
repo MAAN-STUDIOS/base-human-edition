@@ -1,9 +1,9 @@
 import { navigate } from "@utils/router.js";
-import styles from "./styles/main.module.css";
+import styles from "./styles/startgame.module.css";
 
 export default function () {
   document.addEventListener("DOMContentLoaded", () => {
-    // Añadir event listeners a los botones una vez que el DOM esté cargado
+    // TODO:Añadir event listeners a los botones una vez que el DOM esté cargado
     const floodBtn = document.getElementById("flood-btn");
     if (floodBtn) floodBtn.addEventListener("click", () => console.log("Flood selected"));
     
@@ -20,16 +20,15 @@ export default function () {
     if (backBtn) backBtn.addEventListener("click", () => navigate("menu"));
   });
 
-  // Retornar HTML como string en lugar de un elemento DOM
   return `
     <section class="${styles.screen}" style="text-align:center;">
-      <h2 style="margin-bottom: 40px;">Choose Your Side</h2>
+      <h2 style="margin-bottom: 40px;">CHOOSE YOUR SIDE</h2>
       
-      <button id="flood-btn">🧬 Play as Flood</button>
-      <button id="human-btn">🚀 Play as Human</button>
+      <button id="flood-btn"><- Play as Flood</button>
+      <button id="human-btn">Play as Human -></button>
       <button id="stats-btn">📊 Stats</button>
       <button id="settings-btn">⚙️ Settings</button>
-      <button id="back-btn">← Back to Menu</button>
+      <button id="back-btn"> Back to Menu</button>
     </section>
   `;
 }
