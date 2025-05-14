@@ -4,9 +4,7 @@ type
 health
 vector
 speed
- */
 
-/*
 events
 
 movePlayer
@@ -19,6 +17,7 @@ import express from 'express';
 import { Server } from 'socket.io';
 import dotenv from 'dotenv';
 import get_logger from "./core/utils/logger.js";
+import { sockerManager } from "./core/utils/networkManager";
 
 
 const logger = get_logger("MAIN");
@@ -37,18 +36,9 @@ const io = new Server(server, {
     }
 });
 
-const onConnect = (socket) => {
-    socket.on("PlayerMove", (data) => {
-        logger.debug({ socket: socket.id, data });
-        socket.broadcast.emit("PlayerMove", data);
-    });
-}
 
+io.on("connect", sockerManager);
 
-io.on("connect", onConnect);
 server.listen(port, () => {
-    const msg = `Server listening on http://locahost:${port} ...`;
-
-    logger.info(msg);
-    console.log(msg)
+    logger.info(`Server listening on https://locahost:${port} ...`);
 });
