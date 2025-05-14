@@ -24,11 +24,11 @@ export default function () {
     <section class="${styles.screen}" style="text-align:center;">
       <h2 style="margin-bottom: 40px;">CHOOSE YOUR SIDE</h2>
       
-      <button id="flood-btn"><- Play as Flood</button>
-      <button id="human-btn">Play as Human -></button>
+      <button id="human-btn" class="${styles.humanBtn}">Play as Human -> </button>
+      <button id="flood-btn" class="${styles.floodBtn}"> <- Play as Flood</button>
       <button id="stats-btn">📊 Stats</button>
       <button id="settings-btn">⚙️ Settings</button>
-      <button id="back-btn"> Back to Menu</button>
+      <button id="back-btn">← Back to Menu</button>
     </section>
   `;
 }
