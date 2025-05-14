@@ -15,3 +15,5 @@ export default function () {
     </section>
   `;
 }
+
+//TODO: Añadir boton de creditos, cuando el juego este terminado
