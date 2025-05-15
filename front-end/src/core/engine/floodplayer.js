@@ -1,6 +1,7 @@
 import { Player } from "./objectplayer.js";
 import { Hitbox } from "@utils/hitbox.js";
 import { FloodClone } from "./floodclone.js";
+import { Vector } from "@utils/vector.js";
 
 export class FloodPlayer extends Player {
   constructor(options = {}) {
@@ -25,17 +26,24 @@ export class FloodPlayer extends Player {
   createClone() {
     const now = performance.now();
     if (now - this.lastCloneTime < this.cloneCooldown || this.biomass < 25) return;
-  
+
     this.lastCloneTime = now;
     this.biomass -= 25;
-  
-    const clone = new FloodClone({
-      position: this.position.clone().add(new Vector(60, 0)), // un poco a la derecha
-      color: "#550000"
-    });
-  
-    this.clones.push(clone);
     console.log("Clone created. Remaining biomass:", this.biomass);
+    
+    // Crear el clon en una posición cercana al jugador
+    const clonePosition = new Vector(
+      this.position.x + 50,  // 50 unidades a la derecha
+      this.position.y
+    );
+    
+    // TODO: Retornar aquí una nueva instancia de FloodNPC más adelante
+    return new FloodClone({
+      position: clonePosition,
+      width: this.width,
+      height: this.height,
+      color: this.color
+    });
   }
   
 

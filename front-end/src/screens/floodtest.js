@@ -32,8 +32,8 @@ export default function () {
     // Crear el jugador en el centro de la pantalla
     const flood = new FloodPlayer({
       position: new Vector(
-        canvas.width / 2 - 25,  
-        canvas.height / 2 - 25  
+        canvas.width / 2 - 25,  // Centrar horizontalmente (restamos la mitad del ancho)
+        canvas.height / 2 - 25  // Centrar verticalmente (restamos la mitad del alto)
       ),
       width: 50,
       height: 50,
@@ -41,11 +41,15 @@ export default function () {
     });
     console.log("Flood player created at:", flood.position);
 
+    // Array para mantener los clones
+    const clones = [];
+
     const keys = {};
     window.addEventListener("keydown", (e) => (keys[e.key.toLowerCase()] = true));
     window.addEventListener("keyup", (e) => (keys[e.key.toLowerCase()] = false));
 
     function loop() {
+      // Limpiar el canvas
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       // Movement con velocidad base y velocidad rápida
@@ -60,17 +64,19 @@ export default function () {
 
       // Abilities
       if (keys["e"]) flood.evolve();
-      if (keys["c"]) flood.createClone();
+      if (keys["c"]) {
+        const clone = flood.createClone();
+        if (clone) {
+          clones.push(clone);
+        }
+      }
       if (keys["f"]) flood.attack("melee", { position: new Vector(250, 250) });
 
       // Dibujar el jugador
       flood.draw(ctx);
 
-      // Dibujar clones
-      for (const clone of flood.clones) {
-        clone.update?.();
-        clone.draw(ctx);
-      }
+      // Dibujar los clones
+      clones.forEach(clone => clone.draw(ctx));
 
       // Dibujar texto de estado
       ctx.font = "16px monospace";
@@ -78,6 +84,7 @@ export default function () {
       ctx.fillText(`Biomass: ${flood.biomass}`, 20, 30);
       ctx.fillText(`Evo: ${flood.evolution}`, 20, 50);
       ctx.fillText(`Speed: ${currentSpeed}`, 20, 70);
+      ctx.fillText(`Clones: ${clones.length}`, 20, 90);
 
       requestAnimationFrame(loop);
     }
