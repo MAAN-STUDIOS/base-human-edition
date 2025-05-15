@@ -5,7 +5,7 @@ import { Vector } from "@utils/vector.js";
 export class FloodClone extends GameObject {
   constructor(options = {}) {
     super(options);
-    this.health = 30;
+    this.health = 50;
     this.hitbox = new Hitbox(this);
     this.evolution = options.evolution || 1;
     this.speed = 1.5;
