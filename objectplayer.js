@@ -1,12 +1,28 @@
-import { GameObject } from "./gameobject";
 
-const PLAYER_SPEED = 5;
-const MAX_HEALTH = 100;
-const WEAPON_DAMAGE = {
-    pistola: 10,
-    granada: 30
-};
-const PISTOL_RANGE = 500; // Rango máximo de la pistola
+
+class GameObject {
+    constructor(position, width, height, color) {
+        this.position = position; // Coordenadas (x, y)
+        this.width = width;
+        this.height = height;
+        this.color = color;
+    }
+
+    draw(ctx) {
+        ctx.fillStyle = this.color;
+        ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
+    }
+
+    // Método para verificar si hay colisión con otro objeto
+    checkCollision(otherObject) {
+        return (
+            this.position.x < otherObject.position.x + otherObject.width &&
+            this.position.x + this.width > otherObject.position.x &&
+            this.position.y < otherObject.position.y + otherObject.height &&
+            this.position.y + this.height > otherObject.position.y
+        );
+    }
+}
 
 class Player extends GameObject {
     constructor(position, width, height, color) {
