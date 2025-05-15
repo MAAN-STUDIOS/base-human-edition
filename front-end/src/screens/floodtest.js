@@ -1,10 +1,12 @@
-import { FloodPlayer } from "../core/engine/floodplayer.js";
-import { Vector } from "../utils/vector.js";
-import styles from "./styles/game.module.css";
+import { FloodPlayer } from "@engine/floodplayer.js";
+import { Vector } from "@utils/vector.js";
+import styles from "@screens/styles/game.module.css";
 
 export default function floodTestScreen() {
-  document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
     const canvas = document.getElementById("game");
+    if (!canvas) return; // Protección en caso de que el canvas no exista
+
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     const ctx = canvas.getContext("2d");
@@ -40,7 +42,7 @@ export default function floodTestScreen() {
     }
 
     loop();
-  });
+  }, 0);
 
   return `
     <main class="${styles.container}">
