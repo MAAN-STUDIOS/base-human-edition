@@ -1,44 +1,21 @@
-/*
-id
-type
-health
-vector
-speed
 
-events
-
-movePlayer
-moveNPC
-attack
- */
-
-import { createServer } from 'http';
-import express from 'express';
-import { Server } from 'socket.io';
+import 'module-alias/register';
 import dotenv from 'dotenv';
-import get_logger from "./core/utils/logger.js";
-import { sockerManager } from "./core/utils/networkManager";
+import { get_logger} from "#utils";
 
-
-const logger = get_logger("MAIN");
-const port = process.env.PORT || 3001;
+const logger = get_logger("APP");
 const envFile = `.env.${process.env.NODE_ENV || `develop`}`;
 
 logger.debug(`Mounting ${envFile} as environment file.`)
 dotenv.config({ path: envFile });
 
-const app = express();
-const server = createServer(app);
-
-const io = new Server(server, {
-    cors: {
-        origin: process.env.FRONTEND_URL
-    }
-});
+const port = process.env.PORT || 3000;
+const apiUrl = process.env.apiURL || `http://localhost:${port}`;
 
 
-io.on("connect", sockerManager);
+import { httpServer } from "#core"; // NOTE: Don't move. Import order matters.
 
-server.listen(port, () => {
-    logger.info(`Server listening on https://locahost:${port} ...`);
+
+httpServer.listen(port, () => {
+    logger.info(`Server listening on ${apiUrl} ...`);
 });
