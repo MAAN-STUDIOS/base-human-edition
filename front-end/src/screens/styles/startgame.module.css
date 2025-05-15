@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  
+.screen {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/bg-floodvshuman.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Press Start 2P', monospace;
+  color: #cccccc;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'VT323', monospace;
+  font-size: 60px;
+  color: #d5d0d0;
+  text-shadow: 5px 5px #151515;
+}
+
+button {
+  background-color: #2a2a2a;
+  color: #f8f8f8;
+  border: 3px solid #666;
+  padding: 16px 24px;
+  font-size: 12px;
+  font-family: 'Press Start 2P', monospace;
+  cursor: pointer;
+  margin: 10px;
+  box-shadow: 3px 3px #111;
+  text-transform: uppercase;
+  transition: background 0.2s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #3a3a3a;
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px #000;
+}
+
+.floodBtn {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+  
+.floodBtn::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 12px;
+    background: red;
+    border-radius: 50%;
+    opacity: 0;
+    animation: drip 1.5s infinite ease-in-out;
+    z-index: -1;
+}
+  
+.floodBtn:hover {
+    background-color: #4a0d0d;
+    box-shadow: 0 0 12px rgb(128, 2, 2), inset 0 0 6px #ff0000;
+    border-color: #911;
+    color: #ffeaea;
+    transform: scale(1.03);
+}
+  
+.floodBtn:hover::after {
+    opacity: 1;
+}
+
+.humanBtn {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+  
+.humanBtn::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(0, 200, 255, 0.2), transparent 70%);
+    animation: pulse 2s infinite;
+    opacity: 0;
+    z-index: -1;
+}
+  
+.humanBtn:hover {
+    background-color: #0f2a3a;
+    box-shadow: 0 0 10px #00d0ff, inset 0 0 5px #00baff;
+    border-color: #00baff;
+    color: #e6faff;
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+}
+  
+.humanBtn:hover::before {
+    opacity: 1;
+}
+  

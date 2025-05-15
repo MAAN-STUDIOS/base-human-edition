@@ -10,7 +10,7 @@ import logger from "@utils/logger.js";
  * Represents a 2D vector with x and y components.
  * @class
  */
-export default class Vector {
+export class Vector {
     /**
      * Creates a new Vector instance.
      * @param {number} [x=0] - The x component.
