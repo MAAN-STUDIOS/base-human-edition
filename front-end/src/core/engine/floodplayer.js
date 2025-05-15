@@ -1,5 +1,6 @@
 import { Player } from "./objectplayer.js";
 import { Hitbox } from "@utils/hitbox.js";
+import { FloodClone } from "./floodclone.js";
 
 export class FloodPlayer extends Player {
   constructor(options = {}) {
@@ -10,6 +11,8 @@ export class FloodPlayer extends Player {
     this.lastCloneTime = 0;
     this.color = "#8b0000";
     this.hitbox = new Hitbox(this);
+    this.clones = [];
+
   }
 
   infectHuman(human) {
@@ -22,12 +25,19 @@ export class FloodPlayer extends Player {
   createClone() {
     const now = performance.now();
     if (now - this.lastCloneTime < this.cloneCooldown || this.biomass < 25) return;
-
+  
     this.lastCloneTime = now;
     this.biomass -= 25;
+  
+    const clone = new FloodClone({
+      position: this.position.clone().add(new Vector(60, 0)), // un poco a la derecha
+      color: "#550000"
+    });
+  
+    this.clones.push(clone);
     console.log("Clone created. Remaining biomass:", this.biomass);
-    // Puedes retornar aquí una nueva instancia de FloodNPC más adelante
   }
+  
 
   evolve() {
     if (this.evolution < 3 && this.biomass >= 50) {
