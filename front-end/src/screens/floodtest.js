@@ -41,8 +41,31 @@ export default function () {
     });
     console.log("Flood player created at:", flood.position);
 
-    // Array para mantener los clones
+    // Array para mantener los clones y enemigos
     const clones = [];
+    const enemies = [];
+
+    // Crear algunos enemigos de prueba
+    for (let i = 0; i < 5; i++) {
+      enemies.push({
+        position: new Vector(
+          Math.random() * canvas.width,
+          Math.random() * canvas.height
+        ),
+        width: 30,
+        height: 30,
+        health: 100,
+        takeDamage(amount) {
+          this.health -= amount;
+          if (this.health <= 0) {
+            const index = enemies.indexOf(this);
+            if (index > -1) {
+              enemies.splice(index, 1);
+            }
+          }
+        }
+      });
+    }
 
     const keys = {};
     window.addEventListener("keydown", (e) => (keys[e.key.toLowerCase()] = true));
@@ -70,7 +93,40 @@ export default function () {
           clones.push(clone);
         }
       }
-      if (keys["f"]) flood.attack("melee", { position: new Vector(250, 250) });
+      if (keys["f"]) {
+        // Atacar al enemigo más cercano
+        const nearestEnemy = enemies.reduce((nearest, enemy) => {
+          const dx = enemy.position.x - flood.position.x;
+          const dy = enemy.position.y - flood.position.y;
+          const distance = Math.sqrt(dx * dx + dy * dy);
+          if (!nearest || distance < nearest.distance) {
+            return { enemy, distance };
+          }
+          return nearest;
+        }, null);
+
+        if (nearestEnemy && nearestEnemy.distance < 100) {
+          flood.attack("melee", nearestEnemy.enemy);
+        }
+      }
+
+      // Actualizar clones
+      clones.forEach(clone => {
+        clone.update(flood, enemies);
+      });
+
+      // Dibujar enemigos
+      enemies.forEach(enemy => {
+        ctx.fillStyle = "red";
+        ctx.fillRect(enemy.position.x, enemy.position.y, enemy.width, enemy.height);
+        
+        // Barra de vida del enemigo
+        const healthPercentage = enemy.health / 100;
+        ctx.fillStyle = "gray";
+        ctx.fillRect(enemy.position.x, enemy.position.y - 10, enemy.width, 5);
+        ctx.fillStyle = "green";
+        ctx.fillRect(enemy.position.x, enemy.position.y - 10, enemy.width * healthPercentage, 5);
+      });
 
       // Dibujar el jugador
       flood.draw(ctx);
@@ -85,6 +141,7 @@ export default function () {
       ctx.fillText(`Evo: ${flood.evolution}`, 20, 50);
       ctx.fillText(`Speed: ${currentSpeed}`, 20, 70);
       ctx.fillText(`Clones: ${clones.length}`, 20, 90);
+      ctx.fillText(`Enemies: ${enemies.length}`, 20, 110);
 
       requestAnimationFrame(loop);
     }
