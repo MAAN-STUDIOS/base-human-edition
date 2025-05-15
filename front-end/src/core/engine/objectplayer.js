@@ -1,4 +1,4 @@
-import { GameObject } from "./gameobject";
+import { GameObject } from "./gameobject.js";
 import { Hitbox } from "@utils/hitbox.js";
 
 const PLAYER_SPEED = 5;
@@ -10,9 +10,9 @@ const WEAPON_DAMAGE = {
 const PISTOL_RANGE = 500; // Rango máximo de la pistola
 
 class Player extends GameObject {
-    constructor({position, width, height, color}) {
-        super(position, width, height, color);
-        this.health = 100;
+    constructor(options = {}) {
+        super(options);
+        this.health = MAX_HEALTH;
         this.attackSlots = ["pistola", "granada"]; // Ejemplo de slots de ataque
         this.hitbox = new Hitbox(this);
     }
@@ -79,8 +79,15 @@ class Player extends GameObject {
     }
 
     draw(ctx) {
-        ctx.fillStyle = this.color;
+        // Primero dibujamos el rectángulo base
+        ctx.fillStyle = this.color || "#8b0000";
         ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
+    
+        // Luego dibujamos el texto
+        ctx.font = "12px monospace";
+        ctx.fillStyle = "white";
+        ctx.fillText(`Biomass: ${this.biomass || 100}`, this.position.x, this.position.y - 20);
+        ctx.fillText(`Evo: ${this.evolution || 1}`, this.position.x, this.position.y - 35);
     
         if (window.DEBUG_MODE) {
             this.hitbox.drawDebug(ctx);
