@@ -29,7 +29,7 @@ export default (io, socket) => {
      *      health: number,    // Current health points
      *      vector: {Vector}, // Position vector
      *      speed: {Vector}   // Velocity vector
-     * }} data - Movement payload to broadcast to other clients.
+     * }||any} data - Movement payload to broadcast to other clients.
      *
      * @returns {void}
      */
