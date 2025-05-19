@@ -5,7 +5,9 @@ class Logger {
     }
 
     debug(message) {
-        this.inner_log('DEBUG', message);
+        if (process.env.DEBUG) {
+            this.inner_log('DEBUG', message);
+        }
     }
 
     info(message) {
