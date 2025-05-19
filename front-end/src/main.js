@@ -1,3 +1,4 @@
+import './style.css';
 import { registerScreen, navigate } from '@utils/router.js';
 import menu from '@/screens/menu.js';
 import startgame from '@/screens/startgame.js';

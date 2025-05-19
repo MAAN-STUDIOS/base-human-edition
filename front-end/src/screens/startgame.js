@@ -22,7 +22,7 @@ export default function () {
 
   return `
     <section class="${styles.screen}" style="text-align:center;">
-      <h2 style="margin-bottom: 40px;">CHOOSE YOUR SIDE</h2>
+      <h1 style="margin-bottom: 40px;">CHOOSE YOUR SIDE</h1>
       
       <button id="human-btn" class="${styles.humanBtn}">Play as Human -> </button>
       <button id="flood-btn" class="${styles.floodBtn}"> <- Play as Flood</button>
