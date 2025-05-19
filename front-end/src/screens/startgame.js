@@ -2,7 +2,7 @@ import { navigate } from "@utils/router.js";
 import styles from "./styles/startgame.module.css";
 
 export default function () {
-  document.addEventListener("DOMContentLoaded", () => {
+    const listener = () => {
     // TODO:Añadir event listeners a los botones una vez que el DOM esté cargado
     const floodBtn = document.getElementById("flood-btn");
     if (floodBtn) floodBtn.addEventListener("click", () => console.log("Flood selected"));
@@ -18,9 +18,9 @@ export default function () {
     
     const backBtn = document.getElementById("back-btn");
     if (backBtn) backBtn.addEventListener("click", () => navigate("menu"));
-  });
+    };
 
-  return `
+    return [listener, `
     <section class="${styles.screen}" style="text-align:center;">
       <h2 style="margin-bottom: 40px;">CHOOSE YOUR SIDE</h2>
       
@@ -30,5 +30,5 @@ export default function () {
       <button id="settings-btn">⚙️ Settings</button>
       <button id="back-btn">← Back to Menu</button>
     </section>
-  `;
+  `];
 }

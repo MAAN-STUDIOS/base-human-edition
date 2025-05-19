@@ -8,9 +8,7 @@ export default function () {
         btn?.addEventListener("click", () => navigate("menu"))
     }
 
-    document.addEventListener("screen-credits-loaded", listener);
-
-    return (`
+    return [listener, `
     <main class="${style.main}">
         <h1>Cosmonavt Developer Team</h1>
         <div class="${style.container}">
@@ -33,5 +31,5 @@ export default function () {
         </div>
         <button id="menu-btn">Back to Menu</button>
     </main>
-    `);
+    `];
 }

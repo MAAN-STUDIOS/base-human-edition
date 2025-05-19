@@ -9,4 +9,3 @@ registerScreen('play', startgame);
 registerScreen('game', gameScreen);
 
 navigate(location.pathname.slice(1) || 'menu');
-window.navigate = navigate;
