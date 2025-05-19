@@ -5,7 +5,8 @@ export default function () {
   document.addEventListener("DOMContentLoaded", () => {
     // TODO:Añadir event listeners a los botones una vez que el DOM esté cargado
     const floodBtn = document.getElementById("flood-btn");
-    if (floodBtn) floodBtn.addEventListener("click", () => console.log("Flood selected"));
+    // if (floodBtn) floodBtn.addEventListener("click", () => console.log("Flood selected"));
+    if (floodBtn) floodBtn.addEventListener("click", () => navigate("flood"));
     
     const humanBtn = document.getElementById("human-btn");
     if (humanBtn) humanBtn.addEventListener("click", () => console.log("Human selected"));
