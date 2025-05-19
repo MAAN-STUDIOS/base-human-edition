@@ -12,4 +12,3 @@ registerScreen('game', gameScreen);
 registerScreen('flood', floodtest);
 
 navigate(location.pathname.slice(1) || 'menu');
-window.navigate = navigate;
