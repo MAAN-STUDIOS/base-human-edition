@@ -13,19 +13,19 @@ export default function () {
         <h1>Cosmonavt Developer Team</h1>
         <div class="${style.container}">
             <div class="${style.containerTeam}">
-                <h2>Humans Team</h2>
+                <h2 class="${style.humans}">Humans Team</h2>
                 <ul>
-                    <li>#Name</li>
-                    <li>#Name</li>
-                    <li>#Name</li>
+                    <li>Angel Montemayor Davila</li>
+                    <li>Emiliano Delgadillo Osorio</li>
+                    <li>Katia Abigail Alvarez Contreras</li>
                 </ul>
             </div>   
             <div class="${style.containerTeam}">
-                <h2>Flood Team</h2>
+                <h2 class="${style.floods}">Flood Team</h2>
                 <ul>
-                    <li>#Name</li>
-                    <li>#Name</li>
-                    <li>#Name</li>
+                    <li>Mariano Carretero Fuentes</li>
+                    <li>Isabela Valls</li>
+                    <li>Hans Preinfalk Davila</li>
                 </ul>
             </div>    
         </div>

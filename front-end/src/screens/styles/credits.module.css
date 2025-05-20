@@ -39,3 +39,11 @@
 .containerTeam li {
     padding: var(--spacing-xs);
 }
+
+.humans {
+    color: var(--color-human);
+}
+
+.floods {
+    color: var(--color-flood);
+}

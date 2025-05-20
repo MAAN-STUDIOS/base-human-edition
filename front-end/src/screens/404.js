@@ -6,12 +6,10 @@ export default function () {
     const listener  = () => {
         const btn = document.getElementById("menu-btn");
 
-        btn.addEventListener("click", () => navigate('menu'));
+        btn?.addEventListener("click", () => navigate('menu'));
     }
 
-    document.addEventListener("page-not-found", listener);
-    document.addEventListener("screen-404-loaded", listener);
-    return `
+    return [listener, `
     <main class="${styles.container}">
         <h1>404</h1>
         <h2>Page Not Found.</h2>
@@ -21,5 +19,5 @@ export default function () {
             Back to Main Page
         </button>
     </main>
-    `;
+    `];
 }

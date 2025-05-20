@@ -3,13 +3,12 @@ import styles from "./styles/startgame.module.css";
 
 export default function () {
     const listener = () => {
-    // TODO:Añadir event listeners a los botones una vez que el DOM esté cargado
     const floodBtn = document.getElementById("flood-btn");
-    // if (floodBtn) floodBtn.addEventListener("click", () => console.log("Flood selected"));
+
     if (floodBtn) floodBtn.addEventListener("click", () => navigate("flood"));
     
     const humanBtn = document.getElementById("human-btn");
-    if (humanBtn) humanBtn.addEventListener("click", () => console.log("Human selected"));
+    if (humanBtn) humanBtn.addEventListener("click", () => navigate("human"));
     
     const statsBtn = document.getElementById("stats-btn");
     if (statsBtn) statsBtn.addEventListener("click", () => console.log("Navigate to stats"));
